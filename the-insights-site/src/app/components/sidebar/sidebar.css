@@ -1,0 +1,117 @@
+/* Sidebar Component */
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    color: var(--color-text-primary);
+    height: 100vh;
+    padding: var(--space-6);
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid rgba(165, 132, 61, 0.2);
+    background:
+        linear-gradient(180deg, #1E1710 0%, #251C12 50%, #1E1710 100%),
+        radial-gradient(ellipse at 50% 0%, rgba(165, 132, 61, 0.08) 0%, transparent 60%);
+    background-blend-mode: overlay;
+    flex-shrink: 0;
+}
+
+/* Logo */
+.logo {
+    margin-bottom: var(--space-8);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid rgba(165, 132, 61, 0.3);
+    position: relative;
+}
+
+/* Subtle glow under logo */
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(226, 197, 111, 0.5), transparent);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    flex: 1;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    padding: var(--space-3) var(--space-4);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    font-weight: 400;
+    position: relative;
+}
+
+a:hover {
+    color: var(--color-text-primary);
+    background-color: rgba(165, 132, 61, 0.15);
+}
+
+a.active {
+    font-weight: 600;
+    color: var(--color-highlight);
+    background-color: rgba(165, 132, 61, 0.2);
+}
+
+/* Active Indicator */
+a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background: var(--color-highlight);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+/* Footer Section */
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: var(--space-6);
+    border-top: 1px solid rgba(165, 132, 61, 0.3);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    :host {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: var(--z-modal);
+        width: 280px;
+        height: 100vh;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+        transition: transform 250ms ease-out;
+    }
+
+    :host-context(.sidebar-open) {
+        transform: translateX(0);
+    }
+}

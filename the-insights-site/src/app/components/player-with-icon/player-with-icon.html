@@ -1,0 +1,9 @@
+<a class="player-with-icon" [routerLink]="['/in-depth-role', slotId()]">
+    <div class="top-row">
+        @if (teamIcon()) {
+            <img class="team-icon" [src]="teamIcon()" [alt]="team()" />
+        }
+        <span class="role">{{ pos() }}</span>
+    </div>
+    <span class="players">{{ playersDisplay() }}</span>
+</a>

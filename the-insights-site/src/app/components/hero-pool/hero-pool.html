@@ -1,0 +1,31 @@
+<h2>Hero Pool</h2>
+
+<div class="hero-pool-container" [class.side-by-side]="hasSecondPlayer()">
+    <div class="hero-pool-column">
+        @if (playerName()) {
+            <h3 class="player-name">{{ playerName() }}</h3>
+        }
+        <div class="hero-grid">
+            @for (hero of heroes(); track hero.hero) {
+                <div class="hero-item">
+                    <img [src]="data.getHeroIcon(hero.hero)" [alt]="hero.hero" width="48" />
+                    <div>{{ hero.wins }}W - {{ hero.losses }}L</div>
+                </div>
+            }
+        </div>
+    </div>
+
+    @if (hasSecondPlayer()) {
+        <div class="hero-pool-column">
+            <h3 class="player-name">{{ player2Name() }}</h3>
+            <div class="hero-grid">
+                @for (hero of player2Heroes(); track hero.hero) {
+                    <div class="hero-item">
+                        <img [src]="data.getHeroIcon(hero.hero)" [alt]="hero.hero" width="48" />
+                        <div>{{ hero.wins }}W - {{ hero.losses }}L</div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

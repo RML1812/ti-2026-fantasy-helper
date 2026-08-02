@@ -1,0 +1,92 @@
+{
+    "kills": {
+        "group": "red",
+        "label": "Kills",
+        "weight": 107
+    },
+    "deaths": {
+        "group": "red",
+        "label": "Deaths",
+        "weight": 195
+    },
+    "creep_score": {
+        "group": "red",
+        "label": "Creep Score",
+        "weight": 3
+    },
+    "gpm": {
+        "group": "red",
+        "label": "Gold Per Minute",
+        "weight": 2
+    },
+    "madstone_collected": {
+        "group": "red",
+        "label": "Madstones Collected",
+        "weight": 13
+    },
+    "tower_kills": {
+        "group": "red",
+        "label": "Tower Kills",
+        "weight": 352
+    },
+    "obs_placed": {
+        "group": "blue",
+        "label": "Observer Wards Placed",
+        "weight": 117
+    },
+    "camps_stacked": {
+        "group": "blue",
+        "label": "Camps Stacked",
+        "weight": 234
+    },
+    "runes_grabbed": {
+        "group": "blue",
+        "label": "Runes Grabbed",
+        "weight": 141
+    },
+    "watchers_taken": {
+        "group": "blue",
+        "label": "Watchers Taken",
+        "weight": 147
+    },
+    "smokes_used": {
+        "group": "blue",
+        "label": "Smokes Used",
+        "weight": 293
+    },
+    "lotus_grabbed": {
+        "group": "blue",
+        "label": "Lotus Grabbed",
+        "weight": 276
+    },
+    "roshan_kills": {
+        "group": "green",
+        "label": "Roshan Kills",
+        "weight": 1172
+    },
+    "teamfight_participation": {
+        "group": "green",
+        "label": "Teamfight Participation",
+        "weight": 2124
+    },
+    "stuns": {
+        "group": "green",
+        "label": "Stun Duration",
+        "weight": 10
+    },
+    "courier_kills": {
+        "group": "green",
+        "label": "Courier Kills",
+        "weight": 703
+    },
+    "tormentor_kills": {
+        "group": "green",
+        "label": "Tormentor Kills",
+        "weight": 879
+    },
+    "firstblood": {
+        "group": "green",
+        "label": "First Blood",
+        "weight": 1934
+    }
+}

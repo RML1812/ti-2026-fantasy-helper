@@ -1,0 +1,26 @@
+{
+    "crimson": {
+        "label": "Crimson"
+    },
+    "cerulean": {
+        "label": "Cerulean"
+    },
+    "emerald": {
+        "label": "Emerald"
+    },
+    "royal": {
+        "label": "Royal"
+    },
+    "golden": {
+        "label": "Golden"
+    },
+    "elemental": {
+        "label": "Elemental"
+    },
+    "otherworldly": {
+        "label": "Otherwoldly"
+    },
+    "heroic": {
+        "label": "Heroic"
+    }
+}

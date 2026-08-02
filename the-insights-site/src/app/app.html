@@ -1,0 +1,17 @@
+<div class="layout">
+
+    <app-sidebar></app-sidebar>
+
+    <div class="sidebar-backdrop" (click)="closeSidebar()" (keyup.escape)="closeSidebar()" role="button" tabindex="0" aria-label="Close sidebar"></div>
+
+    <main>
+
+        <button class="mobile-menu-btn" (click)="toggleSidebar()" aria-label="Toggle navigation menu">
+            <span class="icon">&#9776;</span>
+        </button>
+
+        <router-outlet></router-outlet>
+
+    </main>
+
+</div>

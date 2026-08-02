@@ -1,0 +1,113 @@
+<div class="home-page">
+    @if (showBanner()) {
+        <div class="info-banner">
+            <span class="banner-text"
+                >02/08/2026: Tournament data from GoTF 2026 and 1win Essence II are not yet
+                applied</span
+            >
+            <button class="banner-close" (click)="dismissBanner()">&times;</button>
+        </div>
+    }
+
+    <section class="hero">
+        <h1>The Insights</h1>
+        <p class="subtitle">
+            The International 2026 Fantasy Helper, Pick the best choice of lineup for your higher
+            points and chance to get rewards, based on history not assumption
+        </p>
+        <a class="cta" routerLink="/best-lineup"> &gt; See the best lineup possible </a>
+    </section>
+
+    <section class="abilities">
+        <h2>V This Site Abilities V</h2>
+        <div class="ability-grid">
+            <a class="ability-card" routerLink="/best-lineup">
+                <h3>Best Lineup</h3>
+                <p>Show you the best line up pick possible based on history</p>
+            </a>
+            <a class="ability-card" routerLink="/in-depth-role">
+                <h3>In Depth Role</h3>
+                <p>Learn more about every role in a team</p>
+            </a>
+            <a class="ability-card" routerLink="/leaderboard">
+                <h3>Leaderboard</h3>
+                <p>Team ranking point by every role</p>
+            </a>
+            <a class="ability-card" routerLink="/ti-prophecy">
+                <h3>TI Prophecy</h3>
+                <p>Predicting what each team placement will be</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How does the site works</h2>
+        <p>
+            The data used on this site comes from every competitive scene the pro players plays on
+            patch 7.41. The data from patch 7.40 and below are not used because the updates are
+            significant enough to change the meta, affecting player's hero choices and performance.
+        </p>
+        <p>
+            This site helps to guide you on who to pick on the fantasy pick compendium event,
+            especially for casual players who doesn't follows dota 2 competitive scene. Hope the
+            information served will influence you to pick reasonable player, not some washed-up
+            famous individual.
+        </p>
+    </section>
+
+    <section class="creator">
+        <h2>Get to know the creator</h2>
+        <p>
+            Hello! Thank you for visiting the site and want to know more about me. I built this site
+            for my own self project because i have the idea (and dota addict at this point idk).
+            Always an ideal of mine to make something that combines my enthusiasm in dota and my
+            skills in software engineering. If you have some business/question/anything related to
+            this site, feel free to hit me up or connect on my social media!
+        </p>
+        <div class="social-links">
+            <a
+                class="social-link"
+                href="https://github.com/RML1812"
+                target="_blank"
+                rel="noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>GitHub</span>
+            </a>
+            <a class="social-link" href="mailto:raditya.lacavi@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                </svg>
+                <span>Gmail</span>
+            </a>
+            <a
+                class="social-link"
+                href="https://steamcommunity.com/id/animedaisukixd"
+                target="_blank"
+                rel="noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.22 2.22 0 0 1-1.312-1.568L.33 10.333Z" />
+                    <path
+                        d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.7 1.7 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027m2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048" />
+                </svg>
+                <span>Steam</span>
+            </a>
+        </div>
+    </section>
+
+    <a
+        class="repo-button"
+        href="https://github.com/RML1812/ti-2026-fantasy-helper"
+        target="_blank"
+        rel="noreferrer">
+        <svg class="repo-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        <span>See the repository &gt;&gt;</span>
+    </a>
+</div>

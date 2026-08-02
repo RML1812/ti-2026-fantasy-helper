@@ -1,0 +1,38 @@
+# Node / Angular
+node_modules/
+dist/
+.angular/cache/
+tmp/
+out/
+coverage/
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated data-gathering outputs (reproducible by running the pipeline)
+data-gathering/players.json
+data-gathering/players_stats.json
+data-gathering/players_stats_avg.json
+data-gathering/heroes.json
+data-gathering/teams_icon.json
+data-gathering/failed_matches.json
+
+# Dotabuff session cookies — never commit
+data-gathering/cookies.json
+
+# IDEs and editors
+.idea/
+.history/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+
+# System files
+.DS_Store
+Thumbs.db

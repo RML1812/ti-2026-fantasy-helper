@@ -1,0 +1,118 @@
+/* Custom Select Component */
+:host {
+    display: block;
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+.custom-select {
+    position: relative;
+}
+
+/* Trigger */
+.select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 180px;
+    padding: var(--space-2) var(--space-3);
+    background: linear-gradient(180deg, #1E1710 0%, #1A1510 100%);
+    border: 1px solid rgba(165, 132, 61, 0.3);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: border-color var(--transition-fast);
+    text-align: left;
+}
+
+.select-trigger.has-value {
+    color: var(--color-text-primary);
+}
+
+.select-trigger:hover,
+.select-trigger:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+/* Arrow */
+.arrow {
+    font-size: 0.75rem;
+    transition: transform var(--transition-fast);
+    margin-left: var(--space-2);
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+/* Dropdown */
+.select-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: var(--z-dropdown);
+    margin-top: 4px;
+    max-height: 240px;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #1E1710 0%, #1A1510 100%);
+    border: 1px solid rgba(165, 132, 61, 0.3);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Option */
+.select-option {
+    display: block;
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+    font-family: var(--font-body);
+    text-align: left;
+    cursor: pointer;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.select-option:hover {
+    background: rgba(165, 132, 61, 0.15);
+    color: var(--color-text-primary);
+}
+
+.select-option.active {
+    background: rgba(165, 132, 61, 0.25);
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.select-option.placeholder {
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.select-option.placeholder:hover {
+    color: var(--color-text-secondary);
+}
+
+/* Scrollbar */
+.select-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.select-dropdown::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.select-dropdown::-webkit-scrollbar-thumb {
+    background: rgba(165, 132, 61, 0.3);
+    border-radius: 3px;
+}
+
+.select-dropdown::-webkit-scrollbar-thumb:hover {
+    background: rgba(165, 132, 61, 0.5);
+}

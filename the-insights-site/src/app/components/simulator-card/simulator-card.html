@@ -1,0 +1,77 @@
+<div class="simulator-card">
+    <h2>{{ role() }}</h2>
+
+    @for (slot of slots(); track $index) {
+        <div class="slot">
+            <div>
+                <span
+                    class="badge"
+                    [class.red]="slot.group === 'red'"
+                    [class.green]="slot.group === 'green'"
+                    [class.blue]="slot.group === 'blue'">
+                    {{ slot.group | titlecase }}
+                </span>
+            </div>
+            <app-custom-select
+                [options]="availableStats($index)"
+                [value]="slot.stat"
+                placeholder="Select Stat"
+                (valueChange)="updateStat($index, $event)">
+            </app-custom-select>
+
+            <div class="multiplier-input">
+                <input
+                    type="number"
+                    min="0"
+                    [ngModel]="displayValues()[$index]"
+                    (ngModelChange)="updateMultiplier($index, $event)" />
+                <span class="percent">%</span>
+            </div>
+        </div>
+    }
+
+    <hr />
+    <h3>Top 10</h3>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Role Slot</th>
+            <th>Score</th>
+
+            @if (settings.statsMode() === 'BEST') {
+                <th>Series</th>
+            }
+        </tr>
+
+        @for (row of ranking(); track row.slot.team + row.slot.pos) {
+            <tr>
+                <td>
+                    {{ $index + 1 }}
+                </td>
+                <td>
+                    <app-player-with-icon
+                        [team]="row.slot.team"
+                        [pos]="row.slot.pos"></app-player-with-icon>
+                </td>
+                <td>
+                    {{ row.score?.total | formatDecimal }}
+                </td>
+
+                @if (settings.statsMode() === 'BEST') {
+                    <td>
+                        <a
+                            [routerLink]="[
+                                '/in-depth-role',
+                                data.createRoleSlotId(row.slot.team, row.slot.pos),
+                            ]"
+                            [queryParams]="{
+                                series: row.score?.seriesId,
+                            }">
+                            {{ row.score?.seriesId }}
+                        </a>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+</div>

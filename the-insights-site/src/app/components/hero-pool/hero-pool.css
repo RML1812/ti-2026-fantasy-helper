@@ -1,0 +1,134 @@
+/* Hero Pool Component */
+:host {
+    display: block;
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+/* Section Header */
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-4);
+}
+
+/* Hero Pool Container */
+.hero-pool-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.hero-pool-container.side-by-side {
+    flex-direction: row;
+}
+
+.hero-pool-column {
+    flex: 1;
+}
+
+/* Player Name */
+.player-name {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-3);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid rgba(165, 132, 61, 0.2);
+}
+
+/* Hero Grid */
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: var(--space-4);
+}
+
+/* Hero Item */
+.hero-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-4);
+    background:
+        radial-gradient(ellipse at 50% 100%, rgba(165, 132, 61, 0.08) 0%, transparent 60%),
+        linear-gradient(180deg, #1E1710 0%, #1A1510 100%);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(165, 132, 61, 0.2);
+    transition: all var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.4s ease-out both;
+}
+
+.hero-item:nth-child(1) { animation-delay: 0.05s; }
+.hero-item:nth-child(2) { animation-delay: 0.1s; }
+.hero-item:nth-child(3) { animation-delay: 0.15s; }
+.hero-item:nth-child(4) { animation-delay: 0.2s; }
+.hero-item:nth-child(5) { animation-delay: 0.25s; }
+.hero-item:nth-child(6) { animation-delay: 0.3s; }
+.hero-item:nth-child(7) { animation-delay: 0.35s; }
+.hero-item:nth-child(8) { animation-delay: 0.4s; }
+.hero-item:nth-child(9) { animation-delay: 0.45s; }
+.hero-item:nth-child(10) { animation-delay: 0.5s; }
+.hero-item:nth-child(11) { animation-delay: 0.55s; }
+.hero-item:nth-child(12) { animation-delay: 0.6s; }
+
+/* Subtle glow on hover */
+.hero-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(226, 197, 111, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.hero-item:hover::before {
+    opacity: 1;
+}
+
+.hero-item:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(165, 132, 61, 0.15);
+}
+
+/* Hero Icon */
+.hero-item img {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-2);
+}
+
+/* Win/Loss Record */
+.hero-item div {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-pool-container.side-by-side {
+        flex-direction: column;
+    }
+
+    .hero-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: var(--space-3);
+    }
+
+    .hero-item {
+        padding: var(--space-3);
+    }
+
+    .hero-item img {
+        width: 40px;
+        height: 40px;
+    }
+}

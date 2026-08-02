@@ -1,0 +1,62 @@
+/* Best Lineup Page */
+:host {
+    display: block;
+}
+
+.best-lineup-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-8) 0;
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+/* Lineup Summary */
+.lineup-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+}
+
+/* Total Score */
+.summary-total {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-6);
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(226, 197, 111, 0.08) 0%, transparent 50%),
+        linear-gradient(180deg, #1E1710 0%, #1A1510 100%);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(165, 132, 61, 0.3);
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative line */
+.summary-total::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(226, 197, 111, 0.4), transparent);
+}
+
+.summary-total strong {
+    color: var(--color-highlight);
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lineup-summary {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,58 @@
+/* Suffix Stats Component */
+:host {
+    display: block;
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+/* Section Header */
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-4);
+}
+
+/* Suffix Grid */
+.suffix-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-3);
+}
+
+/* Suffix Card */
+.suffix-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-3) var(--space-4);
+    background:
+        radial-gradient(ellipse at 70% 0%, rgba(165, 132, 61, 0.05) 0%, transparent 50%),
+        linear-gradient(180deg, #1E1710 0%, #1A1510 100%);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(165, 132, 61, 0.2);
+    animation: fadeInUp 0.4s ease-out both;
+}
+
+.suffix-card:nth-child(1) { animation-delay: 0.05s; }
+.suffix-card:nth-child(2) { animation-delay: 0.1s; }
+.suffix-card:nth-child(3) { animation-delay: 0.15s; }
+.suffix-card:nth-child(4) { animation-delay: 0.2s; }
+.suffix-card:nth-child(5) { animation-delay: 0.25s; }
+.suffix-card:nth-child(6) { animation-delay: 0.3s; }
+
+.suffix-card span {
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+}
+
+.suffix-card strong {
+    color: var(--color-highlight);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .suffix-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,55 @@
+<div class="role-slot-card">
+    @if (score().source !== 'AVG') {
+        <a
+            class="series-link"
+            [routerLink]="['/in-depth-role', slotId()]"
+            [queryParams]="{
+                series: score().seriesId,
+            }">
+            Series {{ score().seriesId }}
+        </a>
+    }
+
+    <div class="slot-header">
+        <app-player-with-icon
+            class="slot-player"
+            [team]="team()"
+            [pos]="pos()"></app-player-with-icon>
+    </div>
+
+    <table class="stats-table">
+        <thead>
+            <tr>
+                <th>Stat</th>
+                <th>Value</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (stat of score().stats; track stat.key) {
+                <tr>
+                    <td>
+                        <span
+                            class="badge"
+                            [class.red]="stat.group === 'red'"
+                            [class.green]="stat.group === 'green'"
+                            [class.blue]="stat.group === 'blue'">
+                            {{ stat.label }}
+                        </span>
+                    </td>
+                    <td>{{ stat.value | formatDecimal }}</td>
+                    <td>{{ stat.score | formatDecimal }}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="total-score">
+        <strong>Total:</strong>
+        {{ score().total | formatDecimal }}
+    </div>
+
+    @if (score().source !== 'AVG') {
+        <a [href]="seriesUrl()" target="_blank"> Learn more about the series </a>
+    }
+</div>

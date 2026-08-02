@@ -1,0 +1,23 @@
+<div class="player-search">
+    <input
+        type="text"
+        placeholder="Search team, role, or player..."
+        [ngModel]="query()"
+        (ngModelChange)="query.set($event)" />
+
+    @if (filteredRoleSlots().length > 0) {
+        <div class="search-results">
+            @for (slot of filteredRoleSlots(); track slot.team + slot.pos) {
+                <div
+                    class="search-item"
+                    role="button"
+                    tabindex="0"
+                    (click)="openRoleSlot(slot.team, slot.pos)"
+                    (keyup.enter)="openRoleSlot(slot.team, slot.pos)">
+                    <app-player-with-icon [team]="slot.team" [pos]="slot.pos">
+                    </app-player-with-icon>
+                </div>
+            }
+        </div>
+    }
+</div>

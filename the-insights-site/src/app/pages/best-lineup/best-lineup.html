@@ -1,0 +1,29 @@
+<h1>Best Lineup</h1>
+
+<div class="best-lineup-page">
+    <app-switch-mode></app-switch-mode>
+    <div class="lineup-summary">
+        @if (bestLineup().core) {
+            <app-role-slot-card
+                [team]="bestLineup().core!.slot.team"
+                [pos]="bestLineup().core!.slot.pos">
+            </app-role-slot-card>
+        }
+        @if (bestLineup().mid) {
+            <app-role-slot-card
+                [team]="bestLineup().mid!.slot.team"
+                [pos]="bestLineup().mid!.slot.pos">
+            </app-role-slot-card>
+        }
+        @if (bestLineup().support) {
+            <app-role-slot-card
+                [team]="bestLineup().support!.slot.team"
+                [pos]="bestLineup().support!.slot.pos">
+            </app-role-slot-card>
+        }
+        <div class="summary-total">
+            Total:
+            <strong>{{ bestLineup().total | formatDecimal }}</strong>
+        </div>
+    </div>
+</div>

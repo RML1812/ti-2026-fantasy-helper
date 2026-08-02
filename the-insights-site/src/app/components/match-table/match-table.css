@@ -1,0 +1,111 @@
+/* Match Table Component */
+:host {
+    display: block;
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+/* Table Header */
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background:
+        linear-gradient(180deg, #1E1710 0%, #1A1510 100%);
+}
+
+th {
+    padding: var(--space-3) var(--space-4);
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(165, 132, 61, 0.3);
+}
+
+td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid rgba(165, 132, 61, 0.15);
+    vertical-align: middle;
+}
+
+tr:hover {
+    background: rgba(165, 132, 61, 0.08);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Series Link */
+.series-cell {
+    vertical-align: middle;
+}
+
+.series-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.series-link:hover {
+    color: var(--color-highlight);
+}
+
+/* Hero Icon */
+.hero-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+}
+
+/* Result */
+.result-win,
+.result-loss {
+    font-size: 1.25rem;
+}
+
+/* Match Link */
+.match-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 0.875rem;
+}
+
+.match-link:hover {
+    color: var(--color-highlight);
+}
+
+/* Score */
+.score-cell {
+    font-weight: 700;
+    color: var(--color-highlight);
+    font-family: var(--font-heading);
+    vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    th, td {
+        padding: var(--space-2) var(--space-3);
+        font-size: 0.875rem;
+    }
+
+    .hero-icon {
+        width: 24px;
+        height: 24px;
+    }
+}

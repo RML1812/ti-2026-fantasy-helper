@@ -1,0 +1,64 @@
+<h2>Series History</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Series</th>
+            @for (name of playerNames(); track name) {
+                <th>{{ name }} Hero</th>
+            }
+            <th>Result</th>
+            <th>Selected Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (row of rows(); track row.seriesId) {
+            @for (match of row.matches; track match.match.match_id; let i = $index) {
+                <tr>
+                    @if (i === 0) {
+                        <td class="series-cell" [attr.rowspan]="row.matches.length">
+                            <a
+                                class="series-link"
+                                [routerLink]="['/in-depth-role', slotId()]"
+                                [queryParams]="{ series: row.seriesId }">
+                                {{ row.seriesId }}
+                            </a>
+                        </td>
+                    }
+                    @for (name of playerNames(); track name) {
+                        <td>
+                            @if (match.heroes.get(name); as hero) {
+                                <img
+                                    class="hero-icon"
+                                    [src]="data.getHeroIcon(hero)"
+                                    [alt]="hero"
+                                    [title]="hero" />
+                            }
+                        </td>
+                    }
+                    <td>
+                        @if (match.match.won) {
+                            <span class="result-win">✅</span>
+                        } @else {
+                            <span class="result-loss">❌</span>
+                        }
+                    </td>
+                    <td>
+                        <a
+                            class="match-link"
+                            [href]="data.getMatchUrl(match.match.match_id)"
+                            target="_blank">
+                            {{ match.match.match_id }}
+                        </a>
+                    </td>
+                    @if (i === 0) {
+                        <td class="score-cell" [attr.rowspan]="row.matches.length">
+                            {{ row.score | formatDecimal }}
+                        </td>
+                    }
+                </tr>
+            }
+        }
+    </tbody>
+</table>

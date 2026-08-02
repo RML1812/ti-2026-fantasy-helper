@@ -1,0 +1,80 @@
+<div class="search-container">
+    <input
+        type="text"
+        #searchInput
+        placeholder="Search by team, role, or player name..."
+        (input)="searchQuery.set(searchInput.value)"
+        [value]="searchQuery()" />
+
+    @if (searchResults().length > 0) {
+        <div class="search-results">
+            @for (slot of searchResults(); track slot.team + slot.pos) {
+                <a
+                    class="search-item"
+                    [routerLink]="['/in-depth-role', data.createRoleSlotId(slot.team, slot.pos)]"
+                    (click)="searchQuery.set('')">
+                    @if (data.getTeamIcon(slot.team)) {
+                        <img
+                            [src]="data.getTeamIcon(slot.team)"
+                            [alt]="slot.team"
+                            class="team-icon" />
+                    }
+                    <span class="role">{{ slot.pos }}</span>
+                    <span class="players">{{ slot.players.join(' & ') }}</span>
+                </a>
+            }
+        </div>
+    }
+</div>
+
+<app-switch-mode></app-switch-mode>
+
+@if (isValid()) {
+    <div class="role-header">
+        <app-player-with-icon
+            class="role-header-icon"
+            [team]="team()"
+            [pos]="pos()"></app-player-with-icon>
+    </div>
+
+    <p style="padding-bottom: 15px">
+        Matches Played Together:
+        {{ matchesPlayedTogether() }}
+    </p>
+
+    <app-role-slot-card
+        style="padding-bottom: 15px"
+        id="role-slot-card"
+        [team]="team()"
+        [pos]="pos()">
+    </app-role-slot-card>
+
+    <div class="section">
+        <app-hero-pool
+            [matches]="player1Matches()"
+            [player2Matches]="player2Matches()"
+            [playerName]="players()[0]"
+            [player2Name]="players()[1]">
+        </app-hero-pool>
+    </div>
+
+    <div class="section">
+        <app-prefix-stats
+            [matches]="player1Matches()"
+            [player2Matches]="player2Matches()"
+            [playerName]="players()[0]"
+            [player2Name]="players()[1]">
+        </app-prefix-stats>
+    </div>
+
+    <div class="section">
+        <app-suffix-stats [suffixesAvg]="player1StatsAvg().suffixes"> </app-suffix-stats>
+    </div>
+
+    <div class="section">
+        <app-match-table [team]="team()" [pos]="pos()"> </app-match-table>
+    </div>
+} @else {
+    <h2>Select a role slot</h2>
+    <p>Search for a team or role above to view detailed statistics.</p>
+}

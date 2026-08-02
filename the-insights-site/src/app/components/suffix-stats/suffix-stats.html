@@ -1,0 +1,12 @@
+<h2>Suffix Stats</h2>
+
+<div class="suffix-grid">
+    @for (card of suffixCards(); track card.id) {
+        <div class="suffix-card">
+            <span>
+                {{ data.getSuffixLabel(card.id) }}
+            </span>
+            <strong> {{ card.percentage * 100 | formatDecimal }}% </strong>
+        </div>
+    }
+</div>

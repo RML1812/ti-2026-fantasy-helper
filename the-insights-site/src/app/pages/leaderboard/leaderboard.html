@@ -1,0 +1,82 @@
+<h1>Leaderboard</h1>
+
+<app-switch-mode></app-switch-mode>
+
+<div class="role-filter">
+    @for (role of roles(); track role) {
+        <button (click)="selectedRole.set(role)" [class.active]="selectedRole() === role">
+            @if (role === 'ALL') {
+                All Roles
+            } @else {
+                {{ role }}
+            }
+        </button>
+    }
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+
+                <th>Role Slot</th>
+
+                <th>Combination</th>
+
+                @if (settings.statsMode() === 'BEST') {
+                    <th>Series</th>
+                }
+
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @for (row of ranking(); track row.slot.team + row.slot.pos) {
+                <tr>
+                    <td class="rank-cell">
+                        {{ $index + 1 }}
+                    </td>
+
+                    <td class="player-cell">
+                        <app-player-with-icon
+                            [team]="row.slot.team"
+                            [pos]="row.slot.pos"></app-player-with-icon>
+                    </td>
+
+                    <td>
+                        @for (stat of row.score.stats; track stat.key) {
+                            <span
+                                class="badge"
+                                [class.red]="stat.group === 'red'"
+                                [class.green]="stat.group === 'green'"
+                                [class.blue]="stat.group === 'blue'">
+                                {{ stat.label }}
+                            </span>
+                        }
+                    </td>
+
+                    @if (settings.statsMode() === 'BEST') {
+                        <td>
+                            <a
+                                [routerLink]="[
+                                    '/in-depth-role',
+                                    data.createRoleSlotId(row.slot.team, row.slot.pos),
+                                ]"
+                                [queryParams]="{
+                                    series: row.score.seriesId,
+                                }">
+                                {{ row.score.seriesId }}
+                            </a>
+                        </td>
+                    }
+
+                    <td>
+                        {{ row.score.total | formatDecimal }}
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

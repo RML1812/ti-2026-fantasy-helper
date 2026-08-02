@@ -1,0 +1,14 @@
+{
+    "Core": {
+        "group": "RGR",
+        "playoff": "RGRGR"
+    },
+    "Mid": {
+        "group": "RBG",
+        "playoff": "RBGRG"
+    },
+    "Support": {
+        "group": "BGB",
+        "playoff": "BGBGB"
+    }
+}

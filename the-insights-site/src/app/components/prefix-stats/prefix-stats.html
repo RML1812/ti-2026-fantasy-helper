@@ -1,0 +1,70 @@
+<h2>Prefix Stats</h2>
+
+<div class="prefix-stats-container" [class.side-by-side]="hasSecondPlayer()">
+    <div class="prefix-stats-column">
+        @if (playerName()) {
+            <h3 class="player-name">
+                {{ playerName() }} <span class="match-count">({{ matchCount() }} matches)</span>
+            </h3>
+        }
+        <div class="prefix-grid">
+            @for (card of prefixCards(); track card.id) {
+                <div class="prefix-card">
+                    <div class="prefix-header">
+                        <span>
+                            {{ data.getPrefixLabel(card.id) }}
+                        </span>
+                        <strong> {{ card.percentage * 100 | formatDecimal }}% </strong>
+                    </div>
+
+                    <div class="hero-list">
+                        @for (hero of card.heroes; track hero.hero) {
+                            <div class="hero-item">
+                                <img
+                                    [src]="data.getHeroIcon(hero.hero)"
+                                    [alt]="hero.hero"
+                                    [title]="hero.hero"
+                                    width="36" />
+                                <span> {{ hero.count }}x </span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    @if (hasSecondPlayer()) {
+        <div class="prefix-stats-column">
+            <h3 class="player-name">
+                {{ player2Name() }}
+                <span class="match-count">({{ player2MatchCount() }} matches)</span>
+            </h3>
+            <div class="prefix-grid">
+                @for (card of player2PrefixCards(); track card.id) {
+                    <div class="prefix-card">
+                        <div class="prefix-header">
+                            <span>
+                                {{ data.getPrefixLabel(card.id) }}
+                            </span>
+                            <strong> {{ card.percentage * 100 | formatDecimal }}% </strong>
+                        </div>
+
+                        <div class="hero-list">
+                            @for (hero of card.heroes; track hero.hero) {
+                                <div class="hero-item">
+                                    <img
+                                        [src]="data.getHeroIcon(hero.hero)"
+                                        [alt]="hero.hero"
+                                        [title]="hero.hero"
+                                        width="36" />
+                                    <span> {{ hero.count }}x </span>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,41 @@
+<div class="switch-mode">
+    @if (isCustom()) {
+        <div class="custom-note">Currently viewing custom series</div>
+    }
+
+    <div class="switch-group">
+        <span class="switch-label">Stats</span>
+        <div class="switch">
+            <button
+                type="button"
+                [class.active]="statsMode() === 'AVG'"
+                (click)="setStatsMode('AVG')">
+                AVG
+            </button>
+            <button
+                type="button"
+                [class.active]="statsMode() === 'BEST'"
+                (click)="setStatsMode('BEST')">
+                BEST
+            </button>
+        </div>
+    </div>
+
+    <div class="switch-group">
+        <span class="switch-label">Format</span>
+        <div class="switch">
+            <button
+                type="button"
+                [class.active]="formatMode() === 'GROUP'"
+                (click)="setFormatMode('GROUP')">
+                Group
+            </button>
+            <button
+                type="button"
+                [class.active]="formatMode() === 'PLAYOFF'"
+                (click)="setFormatMode('PLAYOFF')">
+                Playoff
+            </button>
+        </div>
+    </div>
+</div>

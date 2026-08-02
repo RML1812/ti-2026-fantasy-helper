@@ -2,7 +2,6 @@
 
 > Pick the best Fantasy for The International 2026, based on history — not assumption.
 
-[![Live site](https://img.shields.io/badge/Live%20Site-RML1812.github.io/ti-2026-fantasy-helper-brightgreen.svg)](https://RML1812.github.io/ti-2026-fantasy-helper/)
 [![Angular](https://img.shields.io/badge/Angular-21-E01C37.svg)](https://angular.dev/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-informational.svg)](https://github.com/RML1812/ti-2026-fantasy-helper)
 

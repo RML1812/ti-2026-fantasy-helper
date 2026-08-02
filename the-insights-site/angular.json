@@ -30,7 +30,7 @@
           },
             "configurations": {
             "production": {
-              "baseHref": "/the-insights-site/",
+              "baseHref": "/ti-2026-fantasy-helper/",
               "budgets": [
                 {
                   "type": "initial",

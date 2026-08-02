@@ -79,7 +79,7 @@
 
 ### Deployment
 - GitHub Pages via `.github/workflows/deploy.yml` (Node 20, `ng build --configuration production`, `actions/deploy-pages@v4`)
-- `baseHref: "/the-insights-site/"` in `angular.json` production config
+- `baseHref: "/ti-2026-fantasy-helper/"` in `angular.json` production config
 - `robots.txt` and `sitemap.xml` in `public/` directory
 
 ### Potential Issues

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://RML1812.github.io/the-insights-site/sitemap.xml
+Sitemap: https://RML1812.github.io/ti-2026-fantasy-helper/sitemap.xml

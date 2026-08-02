@@ -30,6 +30,7 @@ jobs:
           cache-dependency-path: the-insights-site/package-lock.json
       - run: npm ci
       - run: npx ng build --configuration production
+      - run: cp dist/the-insights-site/browser/index.html dist/the-insights-site/browser/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: the-insights-site/dist/the-insights-site/browser

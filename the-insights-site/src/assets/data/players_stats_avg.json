@@ -9,39 +9,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.09725906277630415,
+                "teamfight_participation": 0.6018166592197173,
                 "stuns": 24.962821173519004,
-                "tormentor_kills": 0.33355437665782495,
                 "courier_kills": 0.365605658709107,
                 "roshan_kills": 0.4239610963748895,
-                "teamfight_participation": 0.6018166592197173
+                "tormentor_kills": 0.33355437665782495
             },
             "red": {
+                "kills": 6.512157382847038,
+                "creep_score": 489.9580017683466,
                 "gpm": 674.8863837312113,
                 "deaths": 4.554155614500442,
-                "kills": 6.512157382847038,
                 "tower_kills": 1.7937665782493368,
-                "creep_score": 489.9580017683466,
                 "madstone_collected": 20.579575596816976
             }
         },
         "prefixes_avg": {
             "golden": 0.22634836427939878,
+            "cerulean": 0.12687886825817862,
             "emerald": 0.22723253757736517,
-            "crimson": 0.2513262599469496,
-            "elemental": 0.23408488063660476,
             "otherworldly": 0.22082228116710875,
             "royal": 0.1887709991158267,
-            "cerulean": 0.12687886825817862,
-            "heroic": 0.20954907161803715
+            "crimson": 0.2513262599469496,
+            "heroic": 0.20954907161803715,
+            "elemental": 0.23408488063660476
         },
         "suffixes_avg": {
             "tormented": 0.054376657824933686,
-            "patient": 0.0,
-            "clutch": 0.4913793103448276,
             "cruel": 0.3762157382847038,
+            "clutch": 0.24823165340406722,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.17020335985853227,
-            "underdog": 0.5086206896551724,
             "decisive": 0.0,
+            "underdog": 0.5086206896551724,
             "lucky": 0.20026525198938994
         },
         "best_series_id_group": "2852287",
@@ -93,7 +93,7 @@
             "patient": 0.0,
             "underdog": 0.5172413793103449,
             "decisive": 0.0,
-            "clutch": 0.4827586206896552,
+            "clutch": 0.25287356321839083,
             "lucky": 0.19540229885057472,
             "cruel": 0.367816091954023
         },
@@ -110,39 +110,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.12643678160919541,
+                "teamfight_participation": 0.6709454646551727,
                 "stuns": 45.88057626551723,
-                "tormentor_kills": 0.05172413793103448,
                 "courier_kills": 0.2931034482758621,
                 "roshan_kills": 0.028735632183908046,
-                "teamfight_participation": 0.6709454646551727
+                "tormentor_kills": 0.05172413793103448
             },
             "blue": {
+                "obs_placed": 9.551724137931036,
+                "smokes_used": 2.902298850574713,
                 "lotus_grabbed": 1.3103448275862069,
                 "runes_grabbed": 2.7586206896551726,
                 "watchers_taken": 9.637931034482758,
-                "obs_placed": 9.551724137931036,
-                "camps_stacked": 3.4942528735632186,
-                "smokes_used": 2.902298850574713
+                "camps_stacked": 3.4942528735632186
             }
         },
         "prefixes_avg": {
             "golden": 0.3505747126436781,
+            "cerulean": 0.13218390804597702,
             "emerald": 0.27011494252873564,
-            "crimson": 0.20689655172413793,
-            "elemental": 0.40804597701149425,
             "otherworldly": 0.15517241379310345,
             "royal": 0.15517241379310345,
-            "cerulean": 0.13218390804597702,
-            "heroic": 0.27011494252873564
+            "crimson": 0.20689655172413793,
+            "heroic": 0.27011494252873564,
+            "elemental": 0.40804597701149425
         },
         "suffixes_avg": {
             "tormented": 0.05747126436781609,
-            "patient": 0.0,
-            "clutch": 0.4827586206896552,
             "cruel": 0.367816091954023,
+            "clutch": 0.25287356321839083,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.16091954022988506,
-            "underdog": 0.5172413793103449,
             "decisive": 0.0,
+            "underdog": 0.5172413793103449,
             "lucky": 0.19540229885057472
         },
         "best_series_id_group": "2852287",
@@ -158,39 +158,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.10550458715596331,
+                "teamfight_participation": 0.6242856554587156,
                 "stuns": 31.459483863302754,
-                "tormentor_kills": 0.3761467889908257,
                 "courier_kills": 0.22935779816513763,
                 "roshan_kills": 0.44495412844036697,
-                "teamfight_participation": 0.6242856554587156
+                "tormentor_kills": 0.3761467889908257
             },
             "red": {
+                "kills": 7.408256880733944,
+                "creep_score": 437.57339449541286,
                 "gpm": 658.880733944954,
                 "deaths": 3.8256880733944953,
-                "kills": 7.408256880733944,
                 "tower_kills": 1.761467889908257,
-                "creep_score": 437.57339449541286,
                 "madstone_collected": 17.03211009174312
             }
         },
         "prefixes_avg": {
             "golden": 0.3211009174311927,
+            "cerulean": 0.03669724770642202,
             "emerald": 0.1743119266055046,
-            "crimson": 0.24770642201834864,
-            "elemental": 0.17889908256880735,
             "otherworldly": 0.14678899082568808,
             "royal": 0.1926605504587156,
-            "cerulean": 0.03669724770642202,
-            "heroic": 0.11467889908256881
+            "crimson": 0.24770642201834864,
+            "heroic": 0.11467889908256881,
+            "elemental": 0.17889908256880735
         },
         "suffixes_avg": {
             "tormented": 0.08256880733944955,
-            "patient": 0.0,
-            "clutch": 0.46788990825688076,
             "cruel": 0.28440366972477066,
+            "clutch": 0.22935779816513763,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.10091743119266056,
-            "underdog": 0.4036697247706422,
             "decisive": 0.03669724770642202,
+            "underdog": 0.4036697247706422,
             "lucky": 0.1651376146788991
         },
         "best_series_id_group": "2826988",
@@ -242,7 +242,7 @@
             "patient": 0.0,
             "underdog": 0.4036697247706422,
             "decisive": 0.03669724770642202,
-            "clutch": 0.46788990825688076,
+            "clutch": 0.22935779816513763,
             "lucky": 0.1651376146788991,
             "cruel": 0.28440366972477066
         },
@@ -259,39 +259,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.13302752293577982,
+                "teamfight_participation": 0.6455306302293577,
                 "stuns": 48.25874837247706,
-                "tormentor_kills": 0.05045871559633028,
                 "courier_kills": 0.4954128440366973,
                 "roshan_kills": 0.045871559633027525,
-                "teamfight_participation": 0.6455306302293577
+                "tormentor_kills": 0.05045871559633028
             },
             "blue": {
+                "obs_placed": 9.243119266055047,
+                "smokes_used": 3.3440366972477067,
                 "lotus_grabbed": 1.4724770642201834,
                 "runes_grabbed": 2.8577981651376145,
                 "watchers_taken": 8.362385321100918,
-                "obs_placed": 9.243119266055047,
-                "camps_stacked": 3.477064220183486,
-                "smokes_used": 3.3440366972477067
+                "camps_stacked": 3.477064220183486
             }
         },
         "prefixes_avg": {
             "golden": 0.22935779816513763,
+            "cerulean": 0.12844036697247707,
             "emerald": 0.37155963302752293,
-            "crimson": 0.37155963302752293,
-            "elemental": 0.25688073394495414,
             "otherworldly": 0.15137614678899083,
             "royal": 0.1926605504587156,
-            "cerulean": 0.12844036697247707,
-            "heroic": 0.3990825688073395
+            "crimson": 0.37155963302752293,
+            "heroic": 0.3990825688073395,
+            "elemental": 0.25688073394495414
         },
         "suffixes_avg": {
             "tormented": 0.08256880733944955,
-            "patient": 0.0,
-            "clutch": 0.46788990825688076,
             "cruel": 0.28440366972477066,
+            "clutch": 0.22935779816513763,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.10091743119266056,
-            "underdog": 0.4036697247706422,
             "decisive": 0.03669724770642202,
+            "underdog": 0.4036697247706422,
             "lucky": 0.1651376146788991
         },
         "best_series_id_group": "2868662",
@@ -307,39 +307,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.09523809523809523,
+                "teamfight_participation": 0.6167704885714287,
                 "stuns": 27.305612070952375,
-                "tormentor_kills": 0.4238095238095238,
                 "courier_kills": 0.18571428571428572,
                 "roshan_kills": 0.6190476190476191,
-                "teamfight_participation": 0.6167704885714287
+                "tormentor_kills": 0.4238095238095238
             },
             "red": {
+                "kills": 7.0476190476190474,
+                "creep_score": 449.93333333333334,
                 "gpm": 671.4190476190477,
                 "deaths": 3.2666666666666666,
-                "kills": 7.0476190476190474,
                 "tower_kills": 2.5047619047619047,
-                "creep_score": 449.93333333333334,
                 "madstone_collected": 16.166666666666664
             }
         },
         "prefixes_avg": {
             "golden": 0.23809523809523808,
+            "cerulean": 0.17142857142857143,
             "emerald": 0.2285714285714286,
-            "crimson": 0.19523809523809524,
-            "elemental": 0.19523809523809524,
             "otherworldly": 0.16666666666666666,
             "royal": 0.13333333333333333,
-            "cerulean": 0.17142857142857143,
-            "heroic": 0.16666666666666669
+            "crimson": 0.19523809523809524,
+            "heroic": 0.16666666666666669,
+            "elemental": 0.19523809523809524
         },
         "suffixes_avg": {
             "tormented": 0.01904761904761905,
-            "patient": 0.009523809523809525,
-            "clutch": 0.47619047619047616,
             "cruel": 0.2857142857142857,
+            "clutch": 0.19047619047619047,
+            "patient": 0.009523809523809525,
             "flayed_twins_acolyte": 0.05714285714285714,
-            "underdog": 0.3238095238095238,
             "decisive": 0.01904761904761905,
+            "underdog": 0.3238095238095238,
             "lucky": 0.20952380952380953
         },
         "best_series_id_group": "2869111",
@@ -391,7 +391,7 @@
             "patient": 0.009523809523809525,
             "underdog": 0.3238095238095238,
             "decisive": 0.01904761904761905,
-            "clutch": 0.47619047619047616,
+            "clutch": 0.19047619047619047,
             "lucky": 0.20952380952380953,
             "cruel": 0.2857142857142857
         },
@@ -408,39 +408,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.15714285714285714,
+                "teamfight_participation": 0.6514745767142858,
                 "stuns": 45.737837536190476,
-                "tormentor_kills": 0.05714285714285715,
                 "courier_kills": 0.26666666666666666,
                 "roshan_kills": 0.047619047619047616,
-                "teamfight_participation": 0.6514745767142858
+                "tormentor_kills": 0.05714285714285715
             },
             "blue": {
+                "obs_placed": 9.504761904761905,
+                "smokes_used": 3.376190476190476,
                 "lotus_grabbed": 0.819047619047619,
                 "runes_grabbed": 2.657142857142857,
                 "watchers_taken": 7.057142857142857,
-                "obs_placed": 9.504761904761905,
-                "camps_stacked": 2.819047619047619,
-                "smokes_used": 3.376190476190476
+                "camps_stacked": 2.819047619047619
             }
         },
         "prefixes_avg": {
             "golden": 0.26666666666666666,
+            "cerulean": 0.24761904761904763,
             "emerald": 0.3047619047619048,
-            "crimson": 0.12857142857142856,
-            "elemental": 0.27142857142857146,
             "otherworldly": 0.18095238095238095,
             "royal": 0.1857142857142857,
-            "cerulean": 0.24761904761904763,
-            "heroic": 0.319047619047619
+            "crimson": 0.12857142857142856,
+            "heroic": 0.319047619047619,
+            "elemental": 0.27142857142857146
         },
         "suffixes_avg": {
             "tormented": 0.01904761904761905,
-            "patient": 0.009523809523809525,
-            "clutch": 0.47619047619047616,
             "cruel": 0.2857142857142857,
+            "clutch": 0.19047619047619047,
+            "patient": 0.009523809523809525,
             "flayed_twins_acolyte": 0.05714285714285714,
-            "underdog": 0.3238095238095238,
             "decisive": 0.01904761904761905,
+            "underdog": 0.3238095238095238,
             "lucky": 0.20952380952380953
         },
         "best_series_id_group": "2857977",
@@ -456,39 +456,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.13020012128562763,
+                "teamfight_participation": 0.5925811901218923,
                 "stuns": 28.666366068021837,
-                "tormentor_kills": 0.32292298362644023,
                 "courier_kills": 0.24948453608247423,
                 "roshan_kills": 0.3832019405700425,
-                "teamfight_participation": 0.5925811901218923
+                "tormentor_kills": 0.32292298362644023
             },
             "red": {
+                "kills": 7.1152213462704665,
+                "creep_score": 401.93414190418434,
                 "gpm": 640.2546998180716,
                 "deaths": 3.737355973317162,
-                "kills": 7.1152213462704665,
                 "tower_kills": 1.8559126743480898,
-                "creep_score": 401.93414190418434,
                 "madstone_collected": 16.64778653729533
             }
         },
         "prefixes_avg": {
             "golden": 0.20600363856882958,
+            "cerulean": 0.15888417222559126,
             "emerald": 0.1986052152819891,
-            "crimson": 0.26428138265615525,
-            "elemental": 0.2649484536082474,
             "otherworldly": 0.31194663432383263,
             "royal": 0.1758641600970285,
-            "cerulean": 0.15888417222559126,
-            "heroic": 0.14487568223165556
+            "crimson": 0.26428138265615525,
+            "heroic": 0.14487568223165556,
+            "elemental": 0.2649484536082474
         },
         "suffixes_avg": {
             "tormented": 0.06622195269860522,
-            "patient": 0.0,
-            "clutch": 0.4922983626440267,
             "cruel": 0.26416009702850207,
+            "clutch": 0.16555488174651306,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.12067919951485749,
-            "underdog": 0.4525166767738023,
             "decisive": 0.08756822316555488,
+            "underdog": 0.4525166767738023,
             "lucky": 0.19721043056397816
         },
         "best_series_id_group": "2833614",
@@ -540,7 +540,7 @@
             "patient": 0.0,
             "underdog": 0.47674418604651164,
             "decisive": 0.08139534883720931,
-            "clutch": 0.46511627906976744,
+            "clutch": 0.1744186046511628,
             "lucky": 0.1744186046511628,
             "cruel": 0.27906976744186046
         },
@@ -557,39 +557,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.13372093023255816,
+                "teamfight_participation": 0.6446976600000001,
                 "stuns": 35.5967134139535,
-                "tormentor_kills": 0.03488372093023256,
                 "courier_kills": 0.36627906976744184,
                 "roshan_kills": 0.03488372093023256,
-                "teamfight_participation": 0.6446976600000001
+                "tormentor_kills": 0.03488372093023256
             },
             "blue": {
+                "obs_placed": 8.0,
+                "smokes_used": 3.2093023255813953,
                 "lotus_grabbed": 1.2383720930232558,
                 "runes_grabbed": 2.575581395348837,
                 "watchers_taken": 5.180232558139535,
-                "obs_placed": 8.0,
-                "camps_stacked": 3.2790697674418605,
-                "smokes_used": 3.2093023255813953
+                "camps_stacked": 3.2790697674418605
             }
         },
         "prefixes_avg": {
             "golden": 0.36627906976744184,
+            "cerulean": 0.09883720930232559,
             "emerald": 0.36627906976744184,
-            "crimson": 0.22093023255813954,
-            "elemental": 0.313953488372093,
             "otherworldly": 0.10465116279069768,
             "royal": 0.12790697674418605,
-            "cerulean": 0.09883720930232559,
-            "heroic": 0.2616279069767442
+            "crimson": 0.22093023255813954,
+            "heroic": 0.2616279069767442,
+            "elemental": 0.313953488372093
         },
         "suffixes_avg": {
             "tormented": 0.06976744186046512,
-            "patient": 0.0,
-            "clutch": 0.46511627906976744,
             "cruel": 0.27906976744186046,
+            "clutch": 0.1744186046511628,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.12790697674418605,
-            "underdog": 0.47674418604651164,
             "decisive": 0.08139534883720931,
+            "underdog": 0.47674418604651164,
             "lucky": 0.1744186046511628
         },
         "best_series_id_group": "2852436",
@@ -605,39 +605,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.104,
+                "teamfight_participation": 0.6127739389200002,
                 "stuns": 33.01754206320001,
-                "tormentor_kills": 0.288,
                 "courier_kills": 0.188,
                 "roshan_kills": 0.372,
-                "teamfight_participation": 0.6127739389200002
+                "tormentor_kills": 0.288
             },
             "red": {
+                "kills": 5.444,
+                "creep_score": 434.508,
                 "gpm": 647.88,
                 "deaths": 4.048,
-                "kills": 5.444,
                 "tower_kills": 2.1,
-                "creep_score": 434.508,
                 "madstone_collected": 17.564
             }
         },
         "prefixes_avg": {
             "golden": 0.24,
+            "cerulean": 0.096,
             "emerald": 0.256,
-            "crimson": 0.22,
-            "elemental": 0.268,
             "otherworldly": 0.26,
             "royal": 0.21600000000000003,
-            "cerulean": 0.096,
-            "heroic": 0.20800000000000002
+            "crimson": 0.22,
+            "heroic": 0.20800000000000002,
+            "elemental": 0.268
         },
         "suffixes_avg": {
             "tormented": 0.008,
-            "patient": 0.008,
-            "clutch": 0.472,
             "cruel": 0.288,
+            "clutch": 0.2,
+            "patient": 0.008,
             "flayed_twins_acolyte": 0.056,
-            "underdog": 0.456,
             "decisive": 0.048,
+            "underdog": 0.456,
             "lucky": 0.2
         },
         "best_series_id_group": "2848204",
@@ -689,7 +689,7 @@
             "patient": 0.008,
             "underdog": 0.456,
             "decisive": 0.048,
-            "clutch": 0.472,
+            "clutch": 0.2,
             "lucky": 0.2,
             "cruel": 0.288
         },
@@ -706,39 +706,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.10782608695652174,
+                "teamfight_participation": 0.6810711935826085,
                 "stuns": 34.42656256438262,
-                "tormentor_kills": 0.04539130434782609,
                 "courier_kills": 0.355304347826087,
                 "roshan_kills": 0.029391304347826087,
-                "teamfight_participation": 0.6810711935826085
+                "tormentor_kills": 0.04539130434782609
             },
             "blue": {
+                "obs_placed": 8.333913043478262,
+                "smokes_used": 3.0551304347826087,
                 "lotus_grabbed": 1.089391304347826,
                 "runes_grabbed": 2.686434782608696,
                 "watchers_taken": 6.469739130434783,
-                "obs_placed": 8.333913043478262,
-                "camps_stacked": 3.102608695652174,
-                "smokes_used": 3.0551304347826087
+                "camps_stacked": 3.102608695652174
             }
         },
         "prefixes_avg": {
             "golden": 0.39252173913043475,
+            "cerulean": 0.05808695652173913,
             "emerald": 0.46121739130434786,
-            "crimson": 0.2787826086956522,
-            "elemental": 0.1848695652173913,
             "otherworldly": 0.09182608695652174,
             "royal": 0.09443478260869566,
-            "cerulean": 0.05808695652173913,
-            "heroic": 0.27617391304347827
+            "crimson": 0.2787826086956522,
+            "heroic": 0.27617391304347827,
+            "elemental": 0.1848695652173913
         },
         "suffixes_avg": {
             "tormented": 0.008347826086956521,
-            "patient": 0.008347826086956521,
-            "clutch": 0.47078260869565214,
             "cruel": 0.2961739130434783,
+            "clutch": 0.18695652173913044,
+            "patient": 0.008347826086956521,
             "flayed_twins_acolyte": 0.05408695652173913,
-            "underdog": 0.43669565217391304,
             "decisive": 0.050086956521739126,
+            "underdog": 0.43669565217391304,
             "lucky": 0.2043478260869565
         },
         "best_series_id_group": "2825774",
@@ -754,39 +754,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.11366859386931384,
+                "teamfight_participation": 0.63313372540144,
                 "stuns": 31.61141157309369,
-                "tormentor_kills": 0.3274790007636086,
                 "courier_kills": 0.3570961055961601,
                 "roshan_kills": 0.463401330860696,
-                "teamfight_participation": 0.63313372540144
+                "tormentor_kills": 0.3274790007636086
             },
             "red": {
+                "kills": 7.573088251336316,
+                "creep_score": 467.11595941965743,
                 "gpm": 670.1624850005455,
                 "deaths": 3.956801570851969,
-                "kills": 7.573088251336316,
                 "tower_kills": 1.6088687684084215,
-                "creep_score": 467.11595941965743,
                 "madstone_collected": 18.40891240318534
             }
         },
         "prefixes_avg": {
             "golden": 0.29246209228755315,
+            "cerulean": 0.10755972510090542,
             "emerald": 0.130795243809316,
-            "crimson": 0.27555361623213703,
-            "elemental": 0.20764699465473982,
             "otherworldly": 0.17753899858186975,
             "royal": 0.23677320824697284,
-            "cerulean": 0.10755972510090542,
-            "heroic": 0.1783026071779208
+            "crimson": 0.27555361623213703,
+            "heroic": 0.1783026071779208,
+            "elemental": 0.20764699465473982
         },
         "suffixes_avg": {
             "tormented": 0.03141703938038617,
-            "patient": 0.010472346460128722,
-            "clutch": 0.48429148030980695,
             "cruel": 0.23857314279480746,
+            "clutch": 0.15708519690193085,
+            "patient": 0.010472346460128722,
             "flayed_twins_acolyte": 0.04188938584051489,
-            "underdog": 0.43525689974910003,
             "decisive": 0.04112577724446384,
+            "underdog": 0.43525689974910003,
             "lucky": 0.17650267263008618
         },
         "best_series_id_group": "2868662",
@@ -838,7 +838,7 @@
             "patient": 0.008849557522123894,
             "underdog": 0.4690265486725664,
             "decisive": 0.061946902654867256,
-            "clutch": 0.504424778761062,
+            "clutch": 0.13274336283185842,
             "lucky": 0.18584070796460178,
             "cruel": 0.24778761061946902
         },
@@ -855,39 +855,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.08934000196136119,
+                "teamfight_participation": 0.640481774690105,
                 "stuns": 43.95238357649798,
-                "tormentor_kills": 0.03456899087967049,
                 "courier_kills": 0.8524075708541727,
                 "roshan_kills": 0.03515739923506914,
-                "teamfight_participation": 0.640481774690105
+                "tormentor_kills": 0.03456899087967049
             },
             "blue": {
+                "obs_placed": 9.51750514857311,
+                "smokes_used": 3.3125919388055314,
                 "lotus_grabbed": 1.234431695596744,
                 "runes_grabbed": 4.9880356967735615,
                 "watchers_taken": 11.279444934784742,
-                "obs_placed": 9.51750514857311,
-                "camps_stacked": 4.455231930960086,
-                "smokes_used": 3.3125919388055314
+                "camps_stacked": 4.455231930960086
             }
         },
         "prefixes_avg": {
             "golden": 0.2617926841227812,
+            "cerulean": 0.10777679709718545,
             "emerald": 0.37349220358929097,
-            "crimson": 0.21050308914386584,
-            "elemental": 0.17225654604295382,
             "otherworldly": 0.1252819456702952,
             "royal": 0.11263116602922428,
-            "cerulean": 0.10777679709718545,
-            "heroic": 0.38261253309796994
+            "crimson": 0.21050308914386584,
+            "heroic": 0.38261253309796994,
+            "elemental": 0.17225654604295382
         },
         "suffixes_avg": {
             "tormented": 0.029714621947631657,
-            "patient": 0.009904873982543885,
-            "clutch": 0.4851426890261842,
             "cruel": 0.25247621849563595,
+            "clutch": 0.1485731097381583,
+            "patient": 0.009904873982543885,
             "flayed_twins_acolyte": 0.03961949593017554,
-            "underdog": 0.4552319309600863,
             "decisive": 0.049524369912719426,
+            "underdog": 0.4552319309600863,
             "lucky": 0.18819260566833382
         },
         "best_series_id_group": "2868662",
@@ -903,39 +903,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.10915750915750916,
+                "teamfight_participation": 0.6338075761227107,
                 "stuns": 40.87246696075091,
-                "tormentor_kills": 0.16373626373626374,
                 "courier_kills": 0.34945054945054943,
                 "roshan_kills": 0.25659340659340657,
-                "teamfight_participation": 0.6338075761227107
+                "tormentor_kills": 0.16373626373626374
             },
             "red": {
+                "kills": 7.1822344322344325,
+                "creep_score": 391.66135531135535,
                 "gpm": 617.3327838827838,
                 "deaths": 4.61043956043956,
-                "kills": 7.1822344322344325,
                 "tower_kills": 1.223992673992674,
-                "creep_score": 391.66135531135535,
                 "madstone_collected": 14.690842490842492
             }
         },
         "prefixes_avg": {
             "golden": 0.29743589743589743,
+            "cerulean": 0.01575091575091575,
             "emerald": 0.20677655677655676,
-            "crimson": 0.30402930402930406,
-            "elemental": 0.24212454212454212,
             "otherworldly": 0.3338827838827839,
             "royal": 0.1521978021978022,
-            "cerulean": 0.01575091575091575,
-            "heroic": 0.09871794871794871
+            "crimson": 0.30402930402930406,
+            "heroic": 0.09871794871794871,
+            "elemental": 0.24212454212454212
         },
         "suffixes_avg": {
             "tormented": 0.0315018315018315,
-            "patient": 0.0038461538461538464,
-            "clutch": 0.456959706959707,
             "cruel": 0.3243589743589743,
+            "clutch": 0.19597069597069597,
+            "patient": 0.0038461538461538464,
             "flayed_twins_acolyte": 0.19945054945054946,
-            "underdog": 0.4065934065934066,
             "decisive": 0.03076923076923077,
+            "underdog": 0.4065934065934066,
             "lucky": 0.16373626373626374
         },
         "best_series_id_group": "2882807",
@@ -987,7 +987,7 @@
             "patient": 0.0,
             "underdog": 0.4375,
             "decisive": 0.0,
-            "clutch": 0.4583333333333333,
+            "clutch": 0.25,
             "lucky": 0.1875,
             "cruel": 0.3541666666666667
         },
@@ -1004,39 +1004,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.12698412698412698,
+                "teamfight_participation": 0.6474326383333333,
                 "stuns": 36.99103420674603,
-                "tormentor_kills": 0.06349206349206349,
                 "courier_kills": 0.35714285714285715,
                 "roshan_kills": 0.03968253968253968,
-                "teamfight_participation": 0.6474326383333333
+                "tormentor_kills": 0.06349206349206349
             },
             "blue": {
+                "obs_placed": 8.293650793650794,
+                "smokes_used": 3.115079365079365,
                 "lotus_grabbed": 1.2698412698412698,
                 "runes_grabbed": 2.634920634920635,
                 "watchers_taken": 8.916666666666668,
-                "obs_placed": 8.293650793650794,
-                "camps_stacked": 3.1547619047619047,
-                "smokes_used": 3.115079365079365
+                "camps_stacked": 3.1547619047619047
             }
         },
         "prefixes_avg": {
             "golden": 0.4126984126984127,
+            "cerulean": 0.16269841269841268,
             "emerald": 0.2698412698412699,
-            "crimson": 0.23015873015873015,
-            "elemental": 0.23412698412698413,
             "otherworldly": 0.047619047619047616,
             "royal": 0.13095238095238093,
-            "cerulean": 0.16269841269841268,
-            "heroic": 0.2698412698412698
+            "crimson": 0.23015873015873015,
+            "heroic": 0.2698412698412698,
+            "elemental": 0.23412698412698413
         },
         "suffixes_avg": {
             "tormented": 0.007936507936507936,
-            "patient": 0.007936507936507936,
-            "clutch": 0.47619047619047616,
             "cruel": 0.30952380952380953,
+            "clutch": 0.12698412698412698,
+            "patient": 0.007936507936507936,
             "flayed_twins_acolyte": 0.1984126984126984,
-            "underdog": 0.3492063492063492,
             "decisive": 0.07936507936507936,
+            "underdog": 0.3492063492063492,
             "lucky": 0.18253968253968253
         },
         "best_series_id_group": "2883654",
@@ -1052,39 +1052,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.0884387351778656,
+                "teamfight_participation": 0.6538928183448616,
                 "stuns": 30.984541359466412,
-                "tormentor_kills": 0.28705533596837945,
                 "courier_kills": 0.1793478260869565,
                 "roshan_kills": 0.341897233201581,
-                "teamfight_participation": 0.6538928183448616
+                "tormentor_kills": 0.28705533596837945
             },
             "red": {
+                "kills": 5.971343873517787,
+                "creep_score": 444.0602766798419,
                 "gpm": 623.854743083004,
                 "deaths": 3.3181818181818183,
-                "kills": 5.971343873517787,
                 "tower_kills": 1.731225296442688,
-                "creep_score": 444.0602766798419,
                 "madstone_collected": 18.18231225296443
             }
         },
         "prefixes_avg": {
             "golden": 0.15563241106719367,
+            "cerulean": 0.22924901185770752,
             "emerald": 0.2435770750988142,
-            "crimson": 0.3255928853754941,
-            "elemental": 0.23517786561264822,
             "otherworldly": 0.2984189723320158,
             "royal": 0.0983201581027668,
-            "cerulean": 0.22924901185770752,
-            "heroic": 0.19614624505928852
+            "crimson": 0.3255928853754941,
+            "heroic": 0.19614624505928852,
+            "elemental": 0.23517786561264822
         },
         "suffixes_avg": {
             "tormented": 0.07806324110671936,
-            "patient": 0.0,
-            "clutch": 0.5884387351778657,
             "cruel": 0.36561264822134387,
+            "clutch": 0.18873517786561267,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.09881422924901187,
-            "underdog": 0.4980237154150198,
             "decisive": 0.021739130434782608,
+            "underdog": 0.4980237154150198,
             "lucky": 0.20009881422924902
         },
         "best_series_id_group": "2879900",
@@ -1136,7 +1136,7 @@
             "patient": 0.0,
             "underdog": 0.5869565217391305,
             "decisive": 0.043478260869565216,
-            "clutch": 0.6086956521739131,
+            "clutch": 0.1956521739130435,
             "lucky": 0.1956521739130435,
             "cruel": 0.41304347826086957
         },
@@ -1153,39 +1153,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.09782608695652173,
+                "teamfight_participation": 0.6937574845652172,
                 "stuns": 40.52712071521739,
-                "tormentor_kills": 0.06521739130434782,
                 "courier_kills": 0.48913043478260865,
                 "roshan_kills": 0.043478260869565216,
-                "teamfight_participation": 0.6937574845652172
+                "tormentor_kills": 0.06521739130434782
             },
             "blue": {
+                "obs_placed": 8.804347826086957,
+                "smokes_used": 3.5,
                 "lotus_grabbed": 1.8804347826086956,
                 "runes_grabbed": 3.108695652173913,
                 "watchers_taken": 9.445652173913043,
-                "obs_placed": 8.804347826086957,
-                "camps_stacked": 4.5978260869565215,
-                "smokes_used": 3.5
+                "camps_stacked": 4.5978260869565215
             }
         },
         "prefixes_avg": {
             "golden": 0.33695652173913043,
+            "cerulean": 0.11956521739130435,
             "emerald": 0.3695652173913043,
-            "crimson": 0.10869565217391304,
-            "elemental": 0.11956521739130435,
             "otherworldly": 0.07608695652173914,
             "royal": 0.17391304347826086,
-            "cerulean": 0.11956521739130435,
-            "heroic": 0.2717391304347826
+            "crimson": 0.10869565217391304,
+            "heroic": 0.2717391304347826,
+            "elemental": 0.11956521739130435
         },
         "suffixes_avg": {
             "tormented": 0.06521739130434782,
-            "patient": 0.0,
-            "clutch": 0.6086956521739131,
             "cruel": 0.41304347826086957,
+            "clutch": 0.1956521739130435,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.15217391304347827,
-            "underdog": 0.5869565217391305,
             "decisive": 0.043478260869565216,
+            "underdog": 0.5869565217391305,
             "lucky": 0.1956521739130435
         },
         "best_series_id_group": "2889694",
@@ -1201,39 +1201,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.06664580725907385,
+                "teamfight_participation": 0.5911064052665833,
                 "stuns": 30.536050180287866,
-                "tormentor_kills": 0.46408010012515644,
                 "courier_kills": 0.4340425531914894,
                 "roshan_kills": 0.5030037546933667,
-                "teamfight_participation": 0.5911064052665833
+                "tormentor_kills": 0.46408010012515644
             },
             "red": {
+                "kills": 7.642177722152691,
+                "creep_score": 481.9405506883604,
                 "gpm": 680.9747183979975,
                 "deaths": 4.10982478097622,
-                "kills": 7.642177722152691,
                 "tower_kills": 2.2893617021276595,
-                "creep_score": 481.9405506883604,
                 "madstone_collected": 19.482665832290365
             }
         },
         "prefixes_avg": {
             "golden": 0.39543178973717147,
+            "cerulean": 0.10894868585732165,
             "emerald": 0.22484355444305382,
-            "crimson": 0.16126408010012516,
-            "elemental": 0.1948685857321652,
             "otherworldly": 0.2276595744680851,
             "royal": 0.15456821026282852,
-            "cerulean": 0.10894868585732165,
-            "heroic": 0.11007509386733416
+            "crimson": 0.16126408010012516,
+            "heroic": 0.11007509386733416,
+            "elemental": 0.1948685857321652
         },
         "suffixes_avg": {
             "tormented": 0.027722152690863578,
-            "patient": 0.0,
-            "clutch": 0.5141426783479349,
             "cruel": 0.4192115143929912,
+            "clutch": 0.18454317897371714,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.11733416770963705,
-            "underdog": 0.3573216520650814,
             "decisive": 0.022403003754693368,
+            "underdog": 0.3573216520650814,
             "lucky": 0.14505632040050062
         },
         "best_series_id_group": "2851715",
@@ -1285,7 +1285,7 @@
             "patient": 0.0,
             "underdog": 0.325,
             "decisive": 0.0375,
-            "clutch": 0.525,
+            "clutch": 0.1875,
             "lucky": 0.125,
             "cruel": 0.4
         },
@@ -1302,39 +1302,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.041176470588235294,
+                "teamfight_participation": 0.6106490411101058,
                 "stuns": 38.7869450780166,
-                "tormentor_kills": 0.02458521870286576,
                 "courier_kills": 0.6067873303167421,
                 "roshan_kills": 0.03046757164404223,
-                "teamfight_participation": 0.6106490411101058
+                "tormentor_kills": 0.02458521870286576
             },
             "blue": {
+                "obs_placed": 8.933634992458522,
+                "smokes_used": 3.1710407239819007,
                 "lotus_grabbed": 1.0138763197586727,
                 "runes_grabbed": 3.1497737556561085,
                 "watchers_taken": 8.390196078431373,
-                "obs_placed": 8.933634992458522,
-                "camps_stacked": 3.811463046757164,
-                "smokes_used": 3.1710407239819007
+                "camps_stacked": 3.811463046757164
             }
         },
         "prefixes_avg": {
             "golden": 0.34841628959276016,
+            "cerulean": 0.1282051282051282,
             "emerald": 0.29291101055806934,
-            "crimson": 0.3105580693815988,
-            "elemental": 0.21689291101055808,
             "otherworldly": 0.2784313725490196,
             "royal": 0.132579185520362,
-            "cerulean": 0.1282051282051282,
-            "heroic": 0.3411764705882353
+            "crimson": 0.3105580693815988,
+            "heroic": 0.3411764705882353,
+            "elemental": 0.21689291101055808
         },
         "suffixes_avg": {
             "tormented": 0.02458521870286576,
-            "patient": 0.0,
-            "clutch": 0.5665158371040724,
             "cruel": 0.3912518853695324,
+            "clutch": 0.18386123680241329,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.09728506787330317,
-            "underdog": 0.36877828054298645,
             "decisive": 0.03740573152337858,
+            "underdog": 0.36877828054298645,
             "lucky": 0.16033182503770738
         },
         "best_series_id_group": "2858501",
@@ -1350,39 +1350,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.07446808510638298,
+                "teamfight_participation": 0.6022784575000001,
                 "stuns": 34.75178954308511,
-                "tormentor_kills": 0.26063829787234044,
                 "courier_kills": 0.22872340425531912,
                 "roshan_kills": 0.3297872340425532,
-                "teamfight_participation": 0.6022784575000001
+                "tormentor_kills": 0.26063829787234044
             },
             "red": {
+                "kills": 6.579787234042553,
+                "creep_score": 433.781914893617,
                 "gpm": 628.8085106382979,
                 "deaths": 4.308510638297872,
-                "kills": 6.579787234042553,
                 "tower_kills": 1.9521276595744679,
-                "creep_score": 433.781914893617,
                 "madstone_collected": 17.664893617021278
             }
         },
         "prefixes_avg": {
             "golden": 0.28723404255319146,
+            "cerulean": 0.13829787234042554,
             "emerald": 0.19680851063829788,
-            "crimson": 0.28191489361702127,
-            "elemental": 0.22340425531914893,
             "otherworldly": 0.21808510638297873,
             "royal": 0.14361702127659576,
-            "cerulean": 0.13829787234042554,
-            "heroic": 0.18085106382978722
+            "crimson": 0.28191489361702127,
+            "heroic": 0.18085106382978722,
+            "elemental": 0.22340425531914893
         },
         "suffixes_avg": {
             "tormented": 0.0,
-            "patient": 0.010638297872340425,
-            "clutch": 0.5,
             "cruel": 0.24468085106382978,
+            "clutch": 0.2127659574468085,
+            "patient": 0.010638297872340425,
             "flayed_twins_acolyte": 0.10638297872340426,
-            "underdog": 0.4574468085106383,
             "decisive": 0.02127659574468085,
+            "underdog": 0.4574468085106383,
             "lucky": 0.09574468085106383
         },
         "best_series_id_group": "2890480",
@@ -1434,7 +1434,7 @@
             "patient": 0.010638297872340425,
             "underdog": 0.4574468085106383,
             "decisive": 0.02127659574468085,
-            "clutch": 0.5,
+            "clutch": 0.2127659574468085,
             "lucky": 0.09574468085106383,
             "cruel": 0.24468085106382978
         },
@@ -1451,39 +1451,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.14950607902735563,
+                "teamfight_participation": 0.6577233203134498,
                 "stuns": 35.72933290672492,
-                "tormentor_kills": 0.058700607902735555,
                 "courier_kills": 0.359612462006079,
                 "roshan_kills": 0.03020516717325228,
-                "teamfight_participation": 0.6577233203134498
+                "tormentor_kills": 0.058700607902735555
             },
             "blue": {
+                "obs_placed": 8.879179331306991,
+                "smokes_used": 3.009498480243161,
                 "lotus_grabbed": 1.6504559270516719,
                 "runes_grabbed": 2.2049772036474162,
                 "watchers_taken": 7.358662613981764,
-                "obs_placed": 8.879179331306991,
-                "camps_stacked": 3.789893617021277,
-                "smokes_used": 3.009498480243161
+                "camps_stacked": 3.789893617021277
             }
         },
         "prefixes_avg": {
             "golden": 0.34536474164133735,
+            "cerulean": 0.1474164133738602,
             "emerald": 0.3368161094224924,
-            "crimson": 0.1831306990881459,
-            "elemental": 0.2543693009118541,
             "otherworldly": 0.12101063829787234,
             "royal": 0.11550151975683891,
-            "cerulean": 0.1474164133738602,
-            "heroic": 0.3043313069908815
+            "crimson": 0.1831306990881459,
+            "heroic": 0.3043313069908815,
+            "elemental": 0.2543693009118541
         },
         "suffixes_avg": {
             "tormented": 0.0,
-            "patient": 0.005319148936170213,
-            "clutch": 0.5267857142857143,
             "cruel": 0.25626899696048633,
+            "clutch": 0.2135258358662614,
+            "patient": 0.005319148936170213,
             "flayed_twins_acolyte": 0.12462006079027355,
-            "underdog": 0.4787234042553191,
             "decisive": 0.028495440729483283,
+            "underdog": 0.4787234042553191,
             "lucky": 0.10144376899696048
         },
         "best_series_id_group": "2890480",
@@ -1499,39 +1499,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.13333333333333333,
+                "teamfight_participation": 0.6359371988333333,
                 "stuns": 26.410454356666666,
-                "tormentor_kills": 0.5,
                 "courier_kills": 0.18333333333333335,
                 "roshan_kills": 0.5333333333333333,
-                "teamfight_participation": 0.6359371988333333
+                "tormentor_kills": 0.5
             },
             "red": {
+                "kills": 7.1,
+                "creep_score": 385.68333333333334,
                 "gpm": 644.9000000000001,
                 "deaths": 2.5166666666666666,
-                "kills": 7.1,
                 "tower_kills": 2.3833333333333333,
-                "creep_score": 385.68333333333334,
                 "madstone_collected": 16.55
             }
         },
         "prefixes_avg": {
             "golden": 0.23333333333333334,
+            "cerulean": 0.2833333333333333,
             "emerald": 0.26666666666666666,
-            "crimson": 0.21666666666666667,
-            "elemental": 0.2833333333333333,
             "otherworldly": 0.30000000000000004,
             "royal": 0.15,
-            "cerulean": 0.2833333333333333,
-            "heroic": 0.23333333333333334
+            "crimson": 0.21666666666666667,
+            "heroic": 0.23333333333333334,
+            "elemental": 0.2833333333333333
         },
         "suffixes_avg": {
             "tormented": 0.03333333333333333,
-            "patient": 0.0,
-            "clutch": 0.5333333333333333,
             "cruel": 0.03333333333333333,
+            "clutch": 0.03333333333333333,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.0,
-            "underdog": 0.26666666666666666,
             "decisive": 0.1,
+            "underdog": 0.26666666666666666,
             "lucky": 0.3
         },
         "best_series_id_group": "2876591",
@@ -1583,7 +1583,7 @@
             "patient": 0.0,
             "underdog": 0.26666666666666666,
             "decisive": 0.1,
-            "clutch": 0.5333333333333333,
+            "clutch": 0.03333333333333333,
             "lucky": 0.3,
             "cruel": 0.03333333333333333
         },
@@ -1600,39 +1600,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.1,
+                "teamfight_participation": 0.6975823536666668,
                 "stuns": 32.50929695166666,
-                "tormentor_kills": 0.06666666666666667,
                 "courier_kills": 0.4833333333333334,
                 "roshan_kills": 0.03333333333333333,
-                "teamfight_participation": 0.6975823536666668
+                "tormentor_kills": 0.06666666666666667
             },
             "blue": {
+                "obs_placed": 7.983333333333334,
+                "smokes_used": 3.033333333333333,
                 "lotus_grabbed": 1.15,
                 "runes_grabbed": 2.466666666666667,
                 "watchers_taken": 6.633333333333333,
-                "obs_placed": 7.983333333333334,
-                "camps_stacked": 3.9833333333333334,
-                "smokes_used": 3.033333333333333
+                "camps_stacked": 3.9833333333333334
             }
         },
         "prefixes_avg": {
             "golden": 0.45,
+            "cerulean": 0.19999999999999998,
             "emerald": 0.33333333333333337,
-            "crimson": 0.2,
-            "elemental": 0.31666666666666665,
             "otherworldly": 0.13333333333333333,
             "royal": 0.11666666666666667,
-            "cerulean": 0.19999999999999998,
-            "heroic": 0.26666666666666666
+            "crimson": 0.2,
+            "heroic": 0.26666666666666666,
+            "elemental": 0.31666666666666665
         },
         "suffixes_avg": {
             "tormented": 0.03333333333333333,
-            "patient": 0.0,
-            "clutch": 0.5333333333333333,
             "cruel": 0.03333333333333333,
+            "clutch": 0.03333333333333333,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.0,
-            "underdog": 0.26666666666666666,
             "decisive": 0.1,
+            "underdog": 0.26666666666666666,
             "lucky": 0.3
         },
         "best_series_id_group": "2845742",
@@ -1648,39 +1648,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.14476190476190476,
+                "teamfight_participation": 0.6179989189013607,
                 "stuns": 30.778960944142863,
-                "tormentor_kills": 0.39632653061224493,
                 "courier_kills": 0.3212925170068027,
                 "roshan_kills": 0.4100680272108843,
-                "teamfight_participation": 0.6179989189013607
+                "tormentor_kills": 0.39632653061224493
             },
             "red": {
+                "kills": 7.2588435374149665,
+                "creep_score": 450.78918367346944,
                 "gpm": 671.3796598639456,
                 "deaths": 4.4701360544217685,
-                "kills": 7.2588435374149665,
                 "tower_kills": 2.1716326530612244,
-                "creep_score": 450.78918367346944,
                 "madstone_collected": 18.304761904761904
             }
         },
         "prefixes_avg": {
             "golden": 0.23775510204081632,
+            "cerulean": 0.08163265306122448,
             "emerald": 0.1349659863945578,
-            "crimson": 0.3094557823129252,
-            "elemental": 0.25693877551020405,
             "otherworldly": 0.21421768707482994,
             "royal": 0.18442176870748297,
-            "cerulean": 0.08163265306122448,
-            "heroic": 0.1491156462585034
+            "crimson": 0.3094557823129252,
+            "heroic": 0.1491156462585034,
+            "elemental": 0.25693877551020405
         },
         "suffixes_avg": {
             "tormented": 0.02197278911564626,
-            "patient": 0.0,
-            "clutch": 0.5166666666666666,
             "cruel": 0.3821088435374149,
+            "clutch": 0.2138095238095238,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.023537414965986395,
-            "underdog": 0.37741496598639457,
             "decisive": 0.023537414965986395,
+            "underdog": 0.37741496598639457,
             "lucky": 0.12122448979591836
         },
         "best_series_id_group": "2890878",
@@ -1732,7 +1732,7 @@
             "patient": 0.0,
             "underdog": 0.40816326530612246,
             "decisive": 0.02040816326530612,
-            "clutch": 0.5,
+            "clutch": 0.21428571428571427,
             "lucky": 0.12244897959183673,
             "cruel": 0.37755102040816324
         },
@@ -1749,39 +1749,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.10479501535127325,
+                "teamfight_participation": 0.6830358848275238,
                 "stuns": 48.97995780506592,
-                "tormentor_kills": 0.04898862199747155,
                 "courier_kills": 0.2467039913310457,
                 "roshan_kills": 0.03300523749322738,
-                "teamfight_participation": 0.6830358848275238
+                "tormentor_kills": 0.04898862199747155
             },
             "blue": {
+                "obs_placed": 9.276052013725845,
+                "smokes_used": 3.0274968394437423,
                 "lotus_grabbed": 1.2852176268737583,
                 "runes_grabbed": 2.4093823370055985,
                 "watchers_taken": 7.065875022575402,
-                "obs_placed": 9.276052013725845,
-                "camps_stacked": 4.074498826079104,
-                "smokes_used": 3.0274968394437423
+                "camps_stacked": 4.074498826079104
             }
         },
         "prefixes_avg": {
             "golden": 0.3681596532418277,
+            "cerulean": 0.0534134007585335,
             "emerald": 0.40798266209138523,
-            "crimson": 0.25826259707422794,
-            "elemental": 0.23171392450785624,
             "otherworldly": 0.1585244717355969,
             "royal": 0.13540726024923244,
-            "cerulean": 0.0534134007585335,
-            "heroic": 0.3902835470471374
+            "crimson": 0.25826259707422794,
+            "heroic": 0.3902835470471374,
+            "elemental": 0.23171392450785624
         },
         "suffixes_avg": {
             "tormented": 0.024155679971103485,
-            "patient": 0.0,
-            "clutch": 0.5066371681415929,
             "cruel": 0.40116489073505507,
+            "clutch": 0.18678887484197218,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.03232797543796279,
-            "underdog": 0.3810727830955391,
             "decisive": 0.0234784179158389,
+            "underdog": 0.3810727830955391,
             "lucky": 0.14529528625609536
         },
         "best_series_id_group": "2857392",
@@ -1797,39 +1797,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.11099324218136099,
+                "teamfight_participation": 0.6028154685337106,
                 "stuns": 26.979416866686307,
-                "tormentor_kills": 0.3331761747603332,
                 "courier_kills": 0.1753889674681754,
                 "roshan_kills": 0.5037718057520038,
-                "teamfight_participation": 0.6028154685337106
+                "tormentor_kills": 0.3331761747603332
             },
             "red": {
+                "kills": 7.30999528524281,
+                "creep_score": 430.9409476661952,
                 "gpm": 685.6780606632092,
                 "deaths": 2.9244853056734246,
-                "kills": 7.30999528524281,
                 "tower_kills": 2.505068363979255,
-                "creep_score": 430.9409476661952,
                 "madstone_collected": 16.5986170045576
             }
         },
         "prefixes_avg": {
             "golden": 0.23283042589973282,
+            "cerulean": 0.20532767562470533,
             "emerald": 0.16654879773691655,
-            "crimson": 0.21196762533396196,
-            "elemental": 0.26147257582901146,
             "otherworldly": 0.16458431557441458,
             "royal": 0.19617318874744616,
-            "cerulean": 0.20532767562470533,
-            "heroic": 0.1438000942951438
+            "crimson": 0.21196762533396196,
+            "heroic": 0.1438000942951438,
+            "elemental": 0.26147257582901146
         },
         "suffixes_avg": {
             "tormented": 0.01386924406726387,
-            "patient": 0.0,
-            "clutch": 0.4529310073864529,
             "cruel": 0.35081722457960085,
+            "clutch": 0.20414898632720413,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.08718371837183718,
-            "underdog": 0.26162973440201165,
             "decisive": 0.04856199905704856,
+            "underdog": 0.26162973440201165,
             "lucky": 0.17244224422442245
         },
         "best_series_id_group": "2859598",
@@ -1881,7 +1881,7 @@
             "patient": 0.0,
             "underdog": 0.24603174603174602,
             "decisive": 0.047619047619047616,
-            "clutch": 0.4603174603174603,
+            "clutch": 0.19047619047619047,
             "lucky": 0.16666666666666666,
             "cruel": 0.3253968253968254
         },
@@ -1898,39 +1898,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.09126984126984126,
+                "teamfight_participation": 0.6403547791666667,
                 "stuns": 28.971408599999993,
-                "tormentor_kills": 0.07142857142857142,
                 "courier_kills": 0.34920634920634924,
                 "roshan_kills": 0.051587301587301584,
-                "teamfight_participation": 0.6403547791666667
+                "tormentor_kills": 0.07142857142857142
             },
             "blue": {
+                "obs_placed": 8.420634920634921,
+                "smokes_used": 2.952380952380952,
                 "lotus_grabbed": 0.9841269841269841,
                 "runes_grabbed": 2.6507936507936507,
                 "watchers_taken": 5.801587301587301,
-                "obs_placed": 8.420634920634921,
-                "camps_stacked": 3.4285714285714284,
-                "smokes_used": 2.952380952380952
+                "camps_stacked": 3.4285714285714284
             }
         },
         "prefixes_avg": {
             "golden": 0.3373015873015873,
+            "cerulean": 0.21825396825396826,
             "emerald": 0.2936507936507936,
-            "crimson": 0.1746031746031746,
-            "elemental": 0.20238095238095238,
             "otherworldly": 0.1349206349206349,
             "royal": 0.11904761904761904,
-            "cerulean": 0.21825396825396826,
-            "heroic": 0.2579365079365079
+            "crimson": 0.1746031746031746,
+            "heroic": 0.2579365079365079,
+            "elemental": 0.20238095238095238
         },
         "suffixes_avg": {
             "tormented": 0.007936507936507936,
-            "patient": 0.0,
-            "clutch": 0.4603174603174603,
             "cruel": 0.3253968253968254,
+            "clutch": 0.19047619047619047,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.05555555555555555,
-            "underdog": 0.24603174603174602,
             "decisive": 0.047619047619047616,
+            "underdog": 0.24603174603174602,
             "lucky": 0.16666666666666666
         },
         "best_series_id_group": "2861562",
@@ -1946,39 +1946,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.09853792263173926,
+                "teamfight_participation": 0.61106149829272,
                 "stuns": 31.437721305178187,
-                "tormentor_kills": 0.3659762412427658,
                 "courier_kills": 0.2940907706366128,
                 "roshan_kills": 0.4351203167834298,
-                "teamfight_participation": 0.61106149829272
+                "tormentor_kills": 0.3659762412427658
             },
             "red": {
+                "kills": 6.68519646664636,
+                "creep_score": 456.55300030459944,
                 "gpm": 682.1410295461468,
                 "deaths": 3.104325312214438,
-                "kills": 6.68519646664636,
                 "tower_kills": 2.0236064575083765,
-                "creep_score": 456.55300030459944,
                 "madstone_collected": 18.189156259518732
             }
         },
         "prefixes_avg": {
             "golden": 0.2445933597319525,
+            "cerulean": 0.13432835820895522,
             "emerald": 0.13859275053304904,
-            "crimson": 0.255558939993908,
-            "elemental": 0.1719463904964971,
             "otherworldly": 0.2371306731647883,
             "royal": 0.22418519646664636,
-            "cerulean": 0.13432835820895522,
-            "heroic": 0.08208955223880597
+            "crimson": 0.255558939993908,
+            "heroic": 0.08208955223880597,
+            "elemental": 0.1719463904964971
         },
         "suffixes_avg": {
             "tormented": 0.007462686567164179,
-            "patient": 0.0,
-            "clutch": 0.5292415473652148,
             "cruel": 0.34983247030155346,
+            "clutch": 0.19631434663417607,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.15351812366737738,
-            "underdog": 0.3349070971672251,
             "decisive": 0.060462991166615895,
+            "underdog": 0.3349070971672251,
             "lucky": 0.16372220530003045
         },
         "best_series_id_group": "2868443",
@@ -2030,7 +2030,7 @@
             "patient": 0.0,
             "underdog": 0.34328358208955223,
             "decisive": 0.05970149253731343,
-            "clutch": 0.5074626865671642,
+            "clutch": 0.208955223880597,
             "lucky": 0.16417910447761194,
             "cruel": 0.373134328358209
         },
@@ -2047,39 +2047,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.13432835820895522,
+                "teamfight_participation": 0.6526566711940298,
                 "stuns": 37.473281808805964,
-                "tormentor_kills": 0.07462686567164178,
                 "courier_kills": 0.5746268656716418,
                 "roshan_kills": 0.029850746268656716,
-                "teamfight_participation": 0.6526566711940298
+                "tormentor_kills": 0.07462686567164178
             },
             "blue": {
+                "obs_placed": 8.582089552238806,
+                "smokes_used": 2.932835820895522,
                 "lotus_grabbed": 1.0223880597014925,
                 "runes_grabbed": 3.41044776119403,
                 "watchers_taken": 9.067164179104477,
-                "obs_placed": 8.582089552238806,
-                "camps_stacked": 4.171641791044776,
-                "smokes_used": 2.932835820895522
+                "camps_stacked": 4.171641791044776
             }
         },
         "prefixes_avg": {
             "golden": 0.35820895522388063,
+            "cerulean": 0.19402985074626866,
             "emerald": 0.33582089552238803,
-            "crimson": 0.26865671641791045,
-            "elemental": 0.2537313432835821,
             "otherworldly": 0.12686567164179102,
             "royal": 0.05970149253731343,
-            "cerulean": 0.19402985074626866,
-            "heroic": 0.26865671641791045
+            "crimson": 0.26865671641791045,
+            "heroic": 0.26865671641791045,
+            "elemental": 0.2537313432835821
         },
         "suffixes_avg": {
             "tormented": 0.014925373134328358,
-            "patient": 0.0,
-            "clutch": 0.5074626865671642,
             "cruel": 0.373134328358209,
+            "clutch": 0.208955223880597,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.16417910447761194,
-            "underdog": 0.34328358208955223,
             "decisive": 0.05970149253731343,
+            "underdog": 0.34328358208955223,
             "lucky": 0.16417910447761194
         },
         "best_series_id_group": "2863029",
@@ -2095,39 +2095,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.09090909090909091,
+                "teamfight_participation": 0.5884755205113635,
                 "stuns": 29.790538709337383,
-                "tormentor_kills": 0.3522727272727273,
                 "courier_kills": 0.1534090909090909,
                 "roshan_kills": 0.4829545454545454,
-                "teamfight_participation": 0.5884755205113635
+                "tormentor_kills": 0.3522727272727273
             },
             "red": {
+                "kills": 5.426136363636363,
+                "creep_score": 444.3295454545455,
                 "gpm": 627.096590909091,
                 "deaths": 3.5397727272727275,
-                "kills": 5.426136363636363,
                 "tower_kills": 1.9147727272727273,
-                "creep_score": 444.3295454545455,
                 "madstone_collected": 16.022727272727273
             }
         },
         "prefixes_avg": {
             "golden": 0.3068181818181818,
+            "cerulean": 0.10795454545454546,
             "emerald": 0.20454545454545456,
-            "crimson": 0.2784090909090909,
-            "elemental": 0.1590909090909091,
             "otherworldly": 0.20454545454545453,
             "royal": 0.18181818181818182,
-            "cerulean": 0.10795454545454546,
-            "heroic": 0.19318181818181818
+            "crimson": 0.2784090909090909,
+            "heroic": 0.19318181818181818,
+            "elemental": 0.1590909090909091
         },
         "suffixes_avg": {
             "tormented": 0.011363636363636364,
-            "patient": 0.011363636363636364,
-            "clutch": 0.4318181818181818,
             "cruel": 0.2727272727272727,
+            "clutch": 0.19318181818181818,
+            "patient": 0.011363636363636364,
             "flayed_twins_acolyte": 0.09090909090909091,
-            "underdog": 0.4431818181818182,
             "decisive": 0.056818181818181816,
+            "underdog": 0.4431818181818182,
             "lucky": 0.20454545454545456
         },
         "best_series_id_group": "2845663",
@@ -2179,7 +2179,7 @@
             "patient": 0.011363636363636364,
             "underdog": 0.4431818181818182,
             "decisive": 0.056818181818181816,
-            "clutch": 0.4318181818181818,
+            "clutch": 0.19318181818181818,
             "lucky": 0.20454545454545456,
             "cruel": 0.2727272727272727
         },
@@ -2196,39 +2196,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.08522727272727273,
+                "teamfight_participation": 0.6731783655681818,
                 "stuns": 33.238145732727276,
-                "tormentor_kills": 0.05113636363636363,
                 "courier_kills": 0.3465909090909091,
                 "roshan_kills": 0.03409090909090909,
-                "teamfight_participation": 0.6731783655681818
+                "tormentor_kills": 0.05113636363636363
             },
             "blue": {
+                "obs_placed": 9.102272727272727,
+                "smokes_used": 3.0625,
                 "lotus_grabbed": 1.1136363636363635,
                 "runes_grabbed": 2.965909090909091,
                 "watchers_taken": 10.551136363636363,
-                "obs_placed": 9.102272727272727,
-                "camps_stacked": 3.1761363636363633,
-                "smokes_used": 3.0625
+                "camps_stacked": 3.1761363636363633
             }
         },
         "prefixes_avg": {
             "golden": 0.2784090909090909,
+            "cerulean": 0.24431818181818182,
             "emerald": 0.3579545454545454,
-            "crimson": 0.1875,
-            "elemental": 0.25,
             "otherworldly": 0.14204545454545453,
             "royal": 0.10795454545454546,
-            "cerulean": 0.24431818181818182,
-            "heroic": 0.32386363636363635
+            "crimson": 0.1875,
+            "heroic": 0.32386363636363635,
+            "elemental": 0.25
         },
         "suffixes_avg": {
             "tormented": 0.011363636363636364,
-            "patient": 0.011363636363636364,
-            "clutch": 0.4318181818181818,
             "cruel": 0.2727272727272727,
+            "clutch": 0.19318181818181818,
+            "patient": 0.011363636363636364,
             "flayed_twins_acolyte": 0.09090909090909091,
-            "underdog": 0.4431818181818182,
             "decisive": 0.056818181818181816,
+            "underdog": 0.4431818181818182,
             "lucky": 0.20454545454545456
         },
         "best_series_id_group": "2845663",
@@ -2244,39 +2244,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.11372348581650907,
+                "teamfight_participation": 0.5981758071332738,
                 "stuns": 31.514398067952975,
-                "tormentor_kills": 0.4200741119345771,
                 "courier_kills": 0.24718885765397391,
                 "roshan_kills": 0.44499105545617174,
-                "teamfight_participation": 0.5981758071332738
+                "tormentor_kills": 0.4200741119345771
             },
             "red": {
+                "kills": 5.955724508050089,
+                "creep_score": 480.5360976233069,
                 "gpm": 647.4394965499616,
                 "deaths": 3.640046000511117,
-                "kills": 5.955724508050089,
                 "tower_kills": 2.257219524661385,
-                "creep_score": 480.5360976233069,
                 "madstone_collected": 17.912343470483005
             }
         },
         "prefixes_avg": {
             "golden": 0.30111167901865576,
+            "cerulean": 0.13768208535650397,
             "emerald": 0.15186557628418096,
-            "crimson": 0.2480833120368004,
-            "elemental": 0.24552772808586762,
             "otherworldly": 0.17416304625606951,
             "royal": 0.21843853820598005,
-            "cerulean": 0.13768208535650397,
-            "heroic": 0.14349603884487605
+            "crimson": 0.2480833120368004,
+            "heroic": 0.14349603884487605,
+            "elemental": 0.24552772808586762
         },
         "suffixes_avg": {
             "tormented": 0.07334525939177103,
-            "patient": 0.0,
-            "clutch": 0.5140557117301303,
             "cruel": 0.32794531050345,
+            "clutch": 0.21486072067467415,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.11308458982877587,
-            "underdog": 0.5198696652185024,
             "decisive": 0.03392537694863276,
+            "underdog": 0.5198696652185024,
             "lucky": 0.12439304881165347
         },
         "best_series_id_group": "2852287",
@@ -2328,7 +2328,7 @@
             "patient": 0.0,
             "underdog": 0.5164835164835165,
             "decisive": 0.03296703296703297,
-            "clutch": 0.5164835164835165,
+            "clutch": 0.2087912087912088,
             "lucky": 0.12087912087912088,
             "cruel": 0.31868131868131866
         },
@@ -2345,39 +2345,39 @@
         "stats_avg": {
             "green": {
                 "firstblood": 0.14285714285714285,
+                "teamfight_participation": 0.6701198796153844,
                 "stuns": 38.50521963021979,
-                "tormentor_kills": 0.049450549450549455,
                 "courier_kills": 0.43956043956043955,
                 "roshan_kills": 0.02197802197802198,
-                "teamfight_participation": 0.6701198796153844
+                "tormentor_kills": 0.049450549450549455
             },
             "blue": {
+                "obs_placed": 9.543956043956044,
+                "smokes_used": 3.4835164835164836,
                 "lotus_grabbed": 0.8956043956043956,
                 "runes_grabbed": 2.956043956043956,
                 "watchers_taken": 9.346153846153847,
-                "obs_placed": 9.543956043956044,
-                "camps_stacked": 3.8461538461538463,
-                "smokes_used": 3.4835164835164836
+                "camps_stacked": 3.8461538461538463
             }
         },
         "prefixes_avg": {
             "golden": 0.34065934065934067,
+            "cerulean": 0.18131868131868134,
             "emerald": 0.34065934065934067,
-            "crimson": 0.23076923076923075,
-            "elemental": 0.31868131868131866,
             "otherworldly": 0.13736263736263737,
             "royal": 0.13736263736263737,
-            "cerulean": 0.18131868131868134,
-            "heroic": 0.24175824175824176
+            "crimson": 0.23076923076923075,
+            "heroic": 0.24175824175824176,
+            "elemental": 0.31868131868131866
         },
         "suffixes_avg": {
             "tormented": 0.07692307692307693,
-            "patient": 0.0,
-            "clutch": 0.5164835164835165,
             "cruel": 0.31868131868131866,
+            "clutch": 0.2087912087912088,
+            "patient": 0.0,
             "flayed_twins_acolyte": 0.10989010989010989,
-            "underdog": 0.5164835164835165,
             "decisive": 0.03296703296703297,
+            "underdog": 0.5164835164835165,
             "lucky": 0.12087912087912088
         },
         "best_series_id_group": "2852287",

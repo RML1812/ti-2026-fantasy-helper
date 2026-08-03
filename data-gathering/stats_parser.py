@@ -130,6 +130,7 @@ def fetch_stratz(match_id):
             id,
             firstBloodTime,
             series {{
+                type,
                 matches {{
                     id,
                     startDateTime
@@ -244,17 +245,31 @@ def has_base_death(match):
 def is_last_match(match):
     last_match_id = None
     last_match_datetime = None
+    series_length = len(match["series"]["matches"])
+    series_type = match["series"]["type"]
 
-    for matches in match['series']['matches']:
+    if series_type == "BEST_OF_THREE":
+        if series_length != 3:
+            return False
+    elif series_type == "BEST_OF_FIVE":
+        if series_length != 5:
+            return False
+    elif series_type == "BEST_OF_TWO":
+        if series_length != 2:
+            return False
+    else:
+        return False
+
+    for matches in match["series"]["matches"]:
         if not last_match_id:
-            last_match_id = matches['id']
-            last_match_datetime = matches['startDateTime']
+            last_match_id = matches["id"]
+            last_match_datetime = matches["startDateTime"]
         else:
-            if last_match_datetime < matches['startDateTime']:
-                last_match_id = matches['id']
-                last_match_datetime = matches['startDateTime']
+            if last_match_datetime < matches["startDateTime"]:
+                last_match_id = matches["id"]
+                last_match_datetime = matches["startDateTime"]
 
-    if match['id'] == last_match_id:
+    if match["id"] == last_match_id:
         return True
 
     return False

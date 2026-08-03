@@ -12,6 +12,15 @@ h2 {
     margin-bottom: var(--space-4);
 }
 
+.table-container {
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(165, 132, 61, 0.2);
+    background:
+        radial-gradient(ellipse at 30% 0%, rgba(165, 132, 61, 0.04) 0%, transparent 50%),
+        linear-gradient(180deg, #1A1510 0%, #15100A 100%);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -31,12 +40,14 @@ th {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 2px solid rgba(165, 132, 61, 0.3);
+    white-space: nowrap;
 }
 
 td {
     padding: var(--space-3) var(--space-4);
     border-bottom: 1px solid rgba(165, 132, 61, 0.15);
     vertical-align: middle;
+    white-space: nowrap;
 }
 
 tr:hover {

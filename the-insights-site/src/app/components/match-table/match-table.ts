@@ -91,7 +91,11 @@ export class MatchTable {
                 selectedMatchIds.includes(sm.match.match_id)
             );
 
-            const source = this.scoreService.findSeriesBestMatches(seriesId);
+            const source = this.scoreService.findSeriesBestMatchesForSlot(
+                seriesId,
+                this.team(),
+                this.pos()
+            );
             if (!source) continue;
 
             const scoreResult = this.scoreService.calculateStats(source.stats, this.pos());

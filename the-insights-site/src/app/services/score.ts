@@ -96,6 +96,42 @@ export class ScoreService {
         };
     }
 
+    findSeriesBestMatchesForSlot(
+        seriesId: string,
+        team: string,
+        pos: string
+    ): PlayerStatsSource | undefined {
+        const matches = this.data.getSeriesMatchesForSlot(seriesId, team, pos);
+
+        if (matches.length < 2) {
+            if (matches.length === 1) {
+                return {
+                    seriesId,
+                    matchIds: [matches[0].match.match_id],
+                    stats: matches[0].match.stats,
+                };
+            }
+            return undefined;
+        }
+
+        const scored = matches.map(({ match }) => ({
+            match,
+            score: this.calculateMatchScore(match.stats),
+        }));
+
+        scored.sort((a, b) => b.score - a.score);
+
+        const best2 = scored.slice(0, 2);
+
+        const aggregated = this.averageStats(best2.map(m => m.match.stats));
+
+        return {
+            seriesId,
+            matchIds: best2.map(m => m.match.match_id),
+            stats: aggregated,
+        };
+    }
+
     calculateMatchScore(stats: MatchData): number {
         let total = 0;
 
@@ -191,7 +227,7 @@ export class ScoreService {
 
             if (!seriesId) return;
 
-            return this.findSeriesBestMatches(seriesId);
+            return this.findSeriesBestMatchesForSlot(seriesId, team, pos);
         } else {
             switch (this.settings.statsMode()) {
                 case 'AVG':
@@ -205,7 +241,7 @@ export class ScoreService {
                             ? avg.best_series_id_group
                             : avg.best_series_id_playoff;
 
-                    return this.findSeriesBestMatches(seriesId);
+                    return this.findSeriesBestMatchesForSlot(seriesId, team, pos);
                 }
             }
         }

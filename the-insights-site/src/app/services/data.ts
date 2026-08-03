@@ -206,4 +206,27 @@ export class DataService {
 
         return result;
     }
+
+    getSeriesMatchesForSlot(
+        seriesId: string,
+        team: string,
+        pos: string
+    ): { playerName: string; match: NonNullable<PlayerStats['matches'][number]> }[] {
+        const players = this.getRoleSlotPlayers(team, pos);
+        const allMatches = this.playerStats();
+        const result: { playerName: string; match: NonNullable<PlayerStats['matches'][number]> }[] =
+            [];
+
+        for (const playerStat of allMatches) {
+            if (!players.includes(playerStat.name)) continue;
+
+            for (const match of playerStat.matches) {
+                if (match.series_id === seriesId) {
+                    result.push({ playerName: playerStat.name, match });
+                }
+            }
+        }
+
+        return result;
+    }
 }

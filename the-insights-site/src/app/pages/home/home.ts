@@ -22,6 +22,11 @@ export class Home implements OnInit {
     ngOnInit(): void {
         this.title.setTitle('The Insights — Dota 2 TI 2026 Fantasy Helper');
         this.meta.updateTag({
+            name: 'google-site-verification',
+            content:
+                'g-4XgmMDDw0GUbAc99PdmVN3rEkTm54_naw_X-leT44',
+        });
+        this.meta.updateTag({
             name: 'description',
             content:
                 'Dota 2 TI 2026 Fantasy Helper — Pick the best lineup based on pro player stats, hero pools, and competitive history. Data-driven fantasy decisions.',

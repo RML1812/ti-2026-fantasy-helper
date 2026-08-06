@@ -9,13 +9,15 @@ coverage/
 # Python
 __pycache__/
 *.pyc
+downloaded_files/
 
 # Generated data-gathering outputs (reproducible by running the pipeline)
 data-gathering/players.json
 data-gathering/players_stats.json
 data-gathering/players_stats_avg.json
 data-gathering/heroes.json
-data-gathering/teams_icon.json
+data-gathering/teams.json
+data-gathering/teams_rating.json
 data-gathering/failed_matches.json
 
 # Dotabuff session cookies — never commit

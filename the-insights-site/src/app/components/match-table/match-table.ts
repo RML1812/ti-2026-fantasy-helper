@@ -55,6 +55,7 @@ export class MatchTable {
 
         for (const { match } of uniqueMatches) {
             const heroes = new Map<string, string>();
+            const wonSet = new Set<boolean>();
 
             for (const playerName of playerList) {
                 const playerEntry = allMatches.find(
@@ -62,10 +63,12 @@ export class MatchTable {
                 );
                 if (playerEntry) {
                     heroes.set(playerName, playerEntry.match.hero);
+                    wonSet.add(playerEntry.match.won);
                 }
             }
 
             if (playerList.length > 1 && heroes.size < playerList.length) continue;
+            if (playerList.length > 1 && wonSet.size > 1) continue;
 
             const existing = grouped.get(match.series_id);
             if (existing) {
@@ -78,19 +81,6 @@ export class MatchTable {
         const seriesRows: SeriesRow[] = [];
 
         for (const [seriesId, seriesMatches] of grouped) {
-            if (seriesMatches.length < 2) continue;
-
-            const scored = seriesMatches.map(sm => ({
-                ...sm,
-                score: this.scoreService.calculateStats(sm.match.stats, this.pos()).total,
-            }));
-            scored.sort((a, b) => b.score - a.score);
-            const best2 = scored.slice(0, 2);
-            const selectedMatchIds = best2.map(m => m.match.match_id);
-            const selectedMatches = seriesMatches.filter(sm =>
-                selectedMatchIds.includes(sm.match.match_id)
-            );
-
             const source = this.scoreService.findSeriesBestMatchesForSlot(
                 seriesId,
                 this.team(),
@@ -99,6 +89,10 @@ export class MatchTable {
             if (!source) continue;
 
             const scoreResult = this.scoreService.calculateStats(source.stats, this.pos());
+
+            const selectedMatches = source.matchIds
+                ? seriesMatches.filter(sm => source.matchIds!.includes(sm.match.match_id))
+                : seriesMatches;
 
             const winCount = selectedMatches.filter(sm => sm.match.won).length;
             const seriesWon = winCount > selectedMatches.length / 2;

@@ -135,24 +135,7 @@ export class SimulatorCard {
     }
 
     calculateRoleSlotBest(team: string, pos: string) {
-        const matches = this.data.getPlayerMatchesForSlot(team, pos);
-
-        if (matches.length === 0) return;
-
-        let best;
-
-        for (const { match } of matches) {
-            const score = this.scoreService.calculateSimulator(match.stats, this.scoreSlots());
-
-            score.matchIds = [match.match_id];
-            score.seriesId = match.series_id;
-
-            if (!best || score.total > best.total) {
-                best = score;
-            }
-        }
-
-        return best;
+        return this.scoreService.calculateBestPairForSimulator(team, pos, this.scoreSlots());
     }
 
     ranking = computed(() => {

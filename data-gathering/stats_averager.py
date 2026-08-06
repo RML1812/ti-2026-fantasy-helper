@@ -119,7 +119,7 @@ def color_score(color_stats):
         weight = STAT_WEIGHTS.get(stat, 1)
 
         if stat == "deaths":
-            weighted.append((1950 - value) * weight)
+            weighted.append(1950 - (value * weight))
         else:
             weighted.append(value * weight)
 
@@ -177,6 +177,60 @@ def average_two_bools(bools_a, bools_b):
     return result
 
 
+def average_games_by_match_id(matches, check_won=False):
+
+    by_match = defaultdict(list)
+
+    for m in matches:
+        if "stats" in m:
+            by_match[m["match_id"]].append(m)
+
+    result = []
+
+    for match_id, match_list in by_match.items():
+
+        if check_won:
+            won_values = set(m.get("won") for m in match_list)
+            if len(won_values) > 1:
+                continue
+
+        if len(match_list) == 1:
+            result.append(match_list[0])
+        else:
+            avg_stats = average_two_stats(match_list[0]["stats"], match_list[1]["stats"])
+            result.append({
+                "match_id": match_id,
+                "series_id": match_list[0]["series_id"],
+                "stats": avg_stats
+            })
+
+    return result
+
+
+def best_pair_score(series_matches, formula):
+
+    best = -1
+
+    if len(series_matches) == 1:
+        return match_score(series_matches[0], formula)
+
+    for i in range(len(series_matches)):
+
+        for j in range(i + 1, len(series_matches)):
+
+            avg_stats = average_two_stats(
+                series_matches[i]["stats"],
+                series_matches[j]["stats"]
+            )
+
+            score = match_score({"stats": avg_stats}, formula)
+
+            if score > best:
+                best = score
+
+    return best
+
+
 def find_best_series(matches, pos):
 
     formulas = ROLE_FORMULAS[pos]
@@ -197,29 +251,8 @@ def find_best_series(matches, pos):
 
     for series_id, series_matches in by_series.items():
 
-        if len(series_matches) < 2:
-            continue
-
-        scored = [
-            (match_score(m, formulas["group"]), match_score(m, formulas["playoff"]), m)
-            for m in series_matches
-        ]
-
-        scored.sort(key=lambda x: x[0], reverse=True)
-        top2_group = scored[:2]
-        avg_group_stats = average_two_stats(
-            top2_group[0][2]["stats"],
-            top2_group[1][2]["stats"]
-        )
-        group_score = match_score({"stats": avg_group_stats}, formulas["group"])
-
-        scored.sort(key=lambda x: x[1], reverse=True)
-        top2_playoff = scored[:2]
-        avg_playoff_stats = average_two_stats(
-            top2_playoff[0][2]["stats"],
-            top2_playoff[1][2]["stats"]
-        )
-        playoff_score = match_score({"stats": avg_playoff_stats}, formulas["playoff"])
+        group_score = best_pair_score(series_matches, formulas["group"])
+        playoff_score = best_pair_score(series_matches, formulas["playoff"])
 
         if group_score > best_group_score:
             best_group_score = group_score
@@ -256,31 +289,14 @@ def find_shared_best_series(matches_a, matches_b, pos):
 
     for series_id in shared_ids:
 
-        all_matches = by_series_a[series_id] + by_series_b[series_id]
+        series_matches_a = by_series_a[series_id]
+        series_matches_b = by_series_b[series_id]
 
-        if len(all_matches) < 2:
-            continue
+        all_matches = series_matches_a + series_matches_b
+        averaged_games = average_games_by_match_id(all_matches, check_won=True)
 
-        scored = [
-            (match_score(m, formulas["group"]), match_score(m, formulas["playoff"]), m)
-            for m in all_matches
-        ]
-
-        scored.sort(key=lambda x: x[0], reverse=True)
-        top2_group = scored[:2]
-        avg_group_stats = average_two_stats(
-            top2_group[0][2]["stats"],
-            top2_group[1][2]["stats"]
-        )
-        group_score = match_score({"stats": avg_group_stats}, formulas["group"])
-
-        scored.sort(key=lambda x: x[1], reverse=True)
-        top2_playoff = scored[:2]
-        avg_playoff_stats = average_two_stats(
-            top2_playoff[0][2]["stats"],
-            top2_playoff[1][2]["stats"]
-        )
-        playoff_score = match_score({"stats": avg_playoff_stats}, formulas["playoff"])
+        group_score = best_pair_score(averaged_games, formulas["group"])
+        playoff_score = best_pair_score(averaged_games, formulas["playoff"])
 
         if group_score > best_group_score:
             best_group_score = group_score

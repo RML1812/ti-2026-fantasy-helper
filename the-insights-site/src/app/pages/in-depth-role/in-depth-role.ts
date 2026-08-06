@@ -133,8 +133,12 @@ export class InDepthRole implements OnInit, OnDestroy {
         if (p2.length === 0) return p1.length;
         if (p1.length === 0) return p2.length;
 
-        const p2Ids = new Set(p2.map(m => m.match_id));
-        return p1.filter(m => p2Ids.has(m.match_id)).length;
+        const p2Map = new Map(p2.map(m => [m.match_id, m]));
+        return p1.filter(m => {
+            const m2 = p2Map.get(m.match_id);
+            if (!m2) return false;
+            return m.won === m2.won;
+        }).length;
     });
 
     player1StatsAvg = computed(() => {

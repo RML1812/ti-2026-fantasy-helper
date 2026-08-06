@@ -40,6 +40,16 @@ export class ScoreService {
     data = inject(DataService);
     settings = inject(SettingsService);
 
+    generatePairs<T>(arr: T[]): T[][] {
+        const pairs: T[][] = [];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                pairs.push([arr[i], arr[j]]);
+            }
+        }
+        return pairs;
+    }
+
     getPlayer(name: string): Player | undefined {
         return this.data.players().find(p => p.name === name);
     }
@@ -103,32 +113,68 @@ export class ScoreService {
     ): PlayerStatsSource | undefined {
         const matches = this.data.getSeriesMatchesForSlot(seriesId, team, pos);
 
-        if (matches.length < 2) {
-            if (matches.length === 1) {
+        if (matches.length === 0) return undefined;
+
+        const expectedCount = this.data.getRoleSlotPlayers(team, pos).length;
+
+        const byMatch = new Map<string, { stats: MatchData[]; won: boolean }>();
+        for (const { match } of matches) {
+            const existing = byMatch.get(match.match_id);
+            if (existing) {
+                existing.stats.push(match.stats);
+            } else {
+                byMatch.set(match.match_id, { stats: [match.stats], won: match.won });
+            }
+        }
+
+        const uniqueMatches: { matchId: string; stats: MatchData }[] = [];
+        for (const [matchId, entry] of byMatch) {
+            if (entry.stats.length < expectedCount) continue;
+            if (entry.stats.length > 1) {
+                const wonSet = new Set(
+                    matches.filter(m => m.match.match_id === matchId).map(m => m.match.won)
+                );
+                if (wonSet.size > 1) continue;
+            }
+            const combined =
+                entry.stats.length === 1 ? entry.stats[0] : this.averageStats(entry.stats);
+            uniqueMatches.push({ matchId, stats: combined });
+        }
+
+        if (uniqueMatches.length < 2) {
+            if (uniqueMatches.length === 1) {
                 return {
                     seriesId,
-                    matchIds: [matches[0].match.match_id],
-                    stats: matches[0].match.stats,
+                    matchIds: [uniqueMatches[0].matchId],
+                    stats: uniqueMatches[0].stats,
                 };
             }
             return undefined;
         }
 
-        const scored = matches.map(({ match }) => ({
-            match,
-            score: this.calculateMatchScore(match.stats),
-        }));
+        const pairs = this.generatePairs(uniqueMatches);
 
-        scored.sort((a, b) => b.score - a.score);
+        let bestPair: { matchIds: string[]; stats: MatchData; score: number } | undefined;
 
-        const best2 = scored.slice(0, 2);
+        for (const [a, b] of pairs) {
+            const averaged = this.averageStats([a.stats, b.stats]);
+            const scoreResult = this.calculateStats(averaged, pos);
 
-        const aggregated = this.averageStats(best2.map(m => m.match.stats));
+            if (!bestPair || scoreResult.total > bestPair.score) {
+                bestPair = {
+                    matchIds: [a.matchId, b.matchId],
+                    stats: averaged,
+                    score: scoreResult.total,
+                };
+            }
+        }
+
+        if (!bestPair) return undefined;
 
         return {
             seriesId,
-            matchIds: best2.map(m => m.match.match_id),
-            stats: aggregated,
+            matchIds: bestPair.matchIds,
+            stats: bestPair.stats,
         };
     }
 
@@ -148,6 +194,92 @@ export class ScoreService {
         }
 
         return total;
+    }
+
+    calculateBestPairForSimulator(
+        team: string,
+        pos: string,
+        scoreSlots: ScoreSlot[]
+    ): ScoreResult | undefined {
+        const matches = this.data.getPlayerMatchesForSlot(team, pos);
+
+        if (matches.length === 0) return undefined;
+
+        const expectedCount = this.data.getRoleSlotPlayers(team, pos).length;
+
+        const bySeriesAndMatch = new Map<
+            string,
+            Map<string, { stats: MatchData[]; won: boolean }>
+        >();
+        for (const entry of matches) {
+            const seriesId = entry.match.series_id;
+            let byMatch = bySeriesAndMatch.get(seriesId);
+            if (!byMatch) {
+                byMatch = new Map();
+                bySeriesAndMatch.set(seriesId, byMatch);
+            }
+            const existing = byMatch.get(entry.match.match_id);
+            if (existing) {
+                existing.stats.push(entry.match.stats);
+            } else {
+                byMatch.set(entry.match.match_id, {
+                    stats: [entry.match.stats],
+                    won: entry.match.won,
+                });
+            }
+        }
+
+        let bestResult: ScoreResult | undefined;
+
+        for (const [, byMatch] of bySeriesAndMatch) {
+            const uniqueMatches: { matchId: string; seriesId: string; stats: MatchData }[] = [];
+            for (const [matchId, entry] of byMatch) {
+                if (entry.stats.length < expectedCount) continue;
+                if (entry.stats.length > 1) {
+                    const wonSet = new Set(
+                        matches.filter(m => m.match.match_id === matchId).map(m => m.match.won)
+                    );
+                    if (wonSet.size > 1) continue;
+                }
+                const combined =
+                    entry.stats.length === 1 ? entry.stats[0] : this.averageStats(entry.stats);
+                const firstEntry = matches.find(e => e.match.match_id === matchId)!;
+                uniqueMatches.push({
+                    matchId,
+                    seriesId: firstEntry.match.series_id,
+                    stats: combined,
+                });
+            }
+
+            if (uniqueMatches.length === 0) continue;
+
+            if (uniqueMatches.length === 1) {
+                const m = uniqueMatches[0];
+                const scoreResult = this.scoreMatch(m.stats, scoreSlots);
+                scoreResult.matchIds = [m.matchId];
+                scoreResult.seriesId = m.seriesId;
+                if (!bestResult || scoreResult.total > bestResult.total) {
+                    bestResult = scoreResult;
+                }
+                continue;
+            }
+
+            const pairs = this.generatePairs(uniqueMatches);
+
+            for (const [a, b] of pairs) {
+                const averaged = this.averageStats([a.stats, b.stats]);
+                const scoreResult = this.scoreMatch(averaged, scoreSlots);
+
+                scoreResult.matchIds = [a.matchId, b.matchId];
+                scoreResult.seriesId = a.seriesId;
+
+                if (!bestResult || scoreResult.total > bestResult.total) {
+                    bestResult = scoreResult;
+                }
+            }
+        }
+
+        return bestResult;
     }
 
     averageStats(statsArray: MatchData[]): MatchData {

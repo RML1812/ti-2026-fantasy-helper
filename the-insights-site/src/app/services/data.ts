@@ -8,7 +8,7 @@ import { Role } from '../models/role';
 import { Stat } from '../models/stat';
 import { Prefix } from '../models/prefix';
 import { Suffix } from '../models/suffix';
-import { TeamIcon } from '../models/team-icon';
+import { Team } from '../models/team';
 
 export interface RoleSlot {
     team: string;
@@ -35,7 +35,7 @@ export class DataService {
     prefixes = signal<Record<string, Prefix>>({});
     suffixes = signal<Record<string, Suffix>>({});
     roles = signal<Record<string, Role>>({});
-    teamIcon = signal<TeamIcon[]>([]);
+    team = signal<Team[]>([]);
 
     roleName = ['Core', 'Mid', 'Support'];
 
@@ -72,9 +72,7 @@ export class DataService {
             .get<Record<string, Role>>('assets/data/roles.json')
             .subscribe(data => this.roles.set(data));
 
-        this.http
-            .get<TeamIcon[]>('assets/data/teams_icon.json')
-            .subscribe(data => this.teamIcon.set(data));
+        this.http.get<Team[]>('assets/data/teams.json').subscribe(data => this.team.set(data));
     }
 
     createRoleSlotId(team: string, pos: string): string {
@@ -143,7 +141,7 @@ export class DataService {
     }
 
     getTeamIcon(team: string): string {
-        const icon = this.teamIcon().find(t => t.team === team);
+        const icon = this.team().find(t => t.team === team);
         return icon?.icon ?? '';
     }
 

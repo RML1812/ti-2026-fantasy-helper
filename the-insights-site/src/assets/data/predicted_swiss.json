@@ -1,0 +1,425 @@
+{
+    "groups": {
+        "A": {
+            "teams": [
+                "HULIGANI",
+                "GamerLegion",
+                "LGD Gaming",
+                "Aurora Gaming",
+                "Xtreme Gaming",
+                "TEAM VISION",
+                "Nigma Galaxy",
+                "Vici Gaming"
+            ]
+        },
+        "B": {
+            "teams": [
+                "Team Liquid",
+                "Team Yandex",
+                "Iron Wing",
+                "OG",
+                "Team Resilience",
+                "BoomBoys",
+                "Team Spirit",
+                "Team Falcons"
+            ]
+        }
+    },
+    "outcomes": [
+        {
+            "finished": true,
+            "history": [
+                {
+                    "round": 1,
+                    "matches": [
+                        {
+                            "team1": "Vici Gaming",
+                            "team2": "Xtreme Gaming",
+                            "winner": "Vici Gaming",
+                            "score": "2-1",
+                            "probability": 0.9311137927027571
+                        },
+                        {
+                            "team1": "LGD Gaming",
+                            "team2": "GamerLegion",
+                            "winner": "GamerLegion",
+                            "score": "1-2",
+                            "probability": 0.08086609555839305
+                        },
+                        {
+                            "team1": "HULIGANI",
+                            "team2": "Aurora Gaming",
+                            "winner": "Aurora Gaming",
+                            "score": "0-2",
+                            "probability": 0.005912962356740891
+                        },
+                        {
+                            "team1": "TEAM VISION",
+                            "team2": "Nigma Galaxy",
+                            "winner": "TEAM VISION",
+                            "score": "2-0",
+                            "probability": 0.9712192500285645
+                        },
+                        {
+                            "team1": "Team Liquid",
+                            "team2": "Team Yandex",
+                            "winner": "Team Yandex",
+                            "score": "1-2",
+                            "probability": 0.33227396164624096
+                        },
+                        {
+                            "team1": "BoomBoys",
+                            "team2": "Iron Wing",
+                            "winner": "BoomBoys",
+                            "score": "2-1",
+                            "probability": 0.6517865894177178
+                        },
+                        {
+                            "team1": "Team Resilience",
+                            "team2": "Team Spirit",
+                            "winner": "Team Spirit",
+                            "score": "0-2",
+                            "probability": 0.01110268714192011
+                        },
+                        {
+                            "team1": "Team Falcons",
+                            "team2": "OG",
+                            "winner": "Team Falcons",
+                            "score": "2-1",
+                            "probability": 0.8147295614698428
+                        }
+                    ]
+                },
+                {
+                    "round": 2,
+                    "matches": [
+                        {
+                            "team1": "HULIGANI",
+                            "team2": "LGD Gaming",
+                            "winner": "LGD Gaming",
+                            "score": "1-2",
+                            "probability": 0.2928375174579352
+                        },
+                        {
+                            "team1": "Xtreme Gaming",
+                            "team2": "Nigma Galaxy",
+                            "winner": "Nigma Galaxy",
+                            "score": "0-2",
+                            "probability": 0.024288417017469692
+                        },
+                        {
+                            "team1": "Team Liquid",
+                            "team2": "Team Resilience",
+                            "winner": "Team Liquid",
+                            "score": "2-0",
+                            "probability": 0.9902269205043308
+                        },
+                        {
+                            "team1": "Iron Wing",
+                            "team2": "OG",
+                            "winner": "Iron Wing",
+                            "score": "2-1",
+                            "probability": 0.6217130536388673
+                        },
+                        {
+                            "team1": "GamerLegion",
+                            "team2": "Aurora Gaming",
+                            "winner": "Aurora Gaming",
+                            "score": "1-2",
+                            "probability": 0.09918709336151234
+                        },
+                        {
+                            "team1": "TEAM VISION",
+                            "team2": "Vici Gaming",
+                            "winner": "TEAM VISION",
+                            "score": "2-1",
+                            "probability": 0.9242679002573061
+                        },
+                        {
+                            "team1": "Team Yandex",
+                            "team2": "Team Spirit",
+                            "winner": "Team Yandex",
+                            "score": "2-1",
+                            "probability": 0.8741656894012715
+                        },
+                        {
+                            "team1": "BoomBoys",
+                            "team2": "Team Falcons",
+                            "winner": "BoomBoys",
+                            "score": "2-1",
+                            "probability": 0.5650448454041309
+                        }
+                    ]
+                },
+                {
+                    "round": 3,
+                    "matches": [
+                        {
+                            "team1": "HULIGANI",
+                            "team2": "Xtreme Gaming",
+                            "winner": "Xtreme Gaming",
+                            "score": "1-2",
+                            "probability": 0.35772133002257595
+                        },
+                        {
+                            "team1": "OG",
+                            "team2": "Team Resilience",
+                            "winner": "OG",
+                            "score": "2-0",
+                            "probability": 0.9487312822185846
+                        },
+                        {
+                            "team1": "GamerLegion",
+                            "team2": "Vici Gaming",
+                            "winner": "Vici Gaming",
+                            "score": "1-2",
+                            "probability": 0.2958880775307297
+                        },
+                        {
+                            "team1": "LGD Gaming",
+                            "team2": "Nigma Galaxy",
+                            "winner": "Nigma Galaxy",
+                            "score": "0-2",
+                            "probability": 0.044292021063377755
+                        },
+                        {
+                            "team1": "Team Liquid",
+                            "team2": "Iron Wing",
+                            "winner": "Team Liquid",
+                            "score": "2-1",
+                            "probability": 0.7192177472540334
+                        },
+                        {
+                            "team1": "Team Spirit",
+                            "team2": "Team Falcons",
+                            "winner": "Team Falcons",
+                            "score": "1-2",
+                            "probability": 0.19241657623040484
+                        },
+                        {
+                            "team1": "Aurora Gaming",
+                            "team2": "TEAM VISION",
+                            "winner": "TEAM VISION",
+                            "score": "1-2",
+                            "probability": 0.2770453069878676
+                        },
+                        {
+                            "team1": "Team Yandex",
+                            "team2": "BoomBoys",
+                            "winner": "Team Yandex",
+                            "score": "2-1",
+                            "probability": 0.5815073089632504
+                        }
+                    ]
+                },
+                {
+                    "round": 4,
+                    "matches": [
+                        {
+                            "team1": "HULIGANI",
+                            "team2": "Team Resilience",
+                            "winner": "Team Resilience",
+                            "score": "1-2",
+                            "probability": 0.3972068695060408
+                        },
+                        {
+                            "team1": "GamerLegion",
+                            "team2": "OG",
+                            "winner": "OG",
+                            "score": "1-2",
+                            "probability": 0.32603045835956374
+                        },
+                        {
+                            "team1": "LGD Gaming",
+                            "team2": "Iron Wing",
+                            "winner": "Iron Wing",
+                            "score": "0-2",
+                            "probability": 0.011520009825762834
+                        },
+                        {
+                            "team1": "Xtreme Gaming",
+                            "team2": "Team Spirit",
+                            "winner": "Team Spirit",
+                            "score": "0-2",
+                            "probability": 0.013606075342658178
+                        },
+                        {
+                            "team1": "Aurora Gaming",
+                            "team2": "BoomBoys",
+                            "winner": "BoomBoys",
+                            "score": "1-2",
+                            "probability": 0.20993529918346332
+                        },
+                        {
+                            "team1": "Nigma Galaxy",
+                            "team2": "Team Falcons",
+                            "winner": "Team Falcons",
+                            "score": "1-2",
+                            "probability": 0.1268457729079143
+                        },
+                        {
+                            "team1": "Vici Gaming",
+                            "team2": "Team Liquid",
+                            "winner": "Team Liquid",
+                            "score": "1-2",
+                            "probability": 0.1256516225509406
+                        },
+                        {
+                            "team1": "TEAM VISION",
+                            "team2": "Team Yandex",
+                            "winner": "TEAM VISION",
+                            "score": "2-1",
+                            "probability": 0.5295432050919081
+                        }
+                    ]
+                },
+                {
+                    "round": 5,
+                    "matches": [
+                        {
+                            "team1": "GamerLegion",
+                            "team2": "Team Resilience",
+                            "winner": "GamerLegion",
+                            "score": "2-1",
+                            "probability": 0.9343766985439426
+                        },
+                        {
+                            "team1": "LGD Gaming",
+                            "team2": "Xtreme Gaming",
+                            "winner": "LGD Gaming",
+                            "score": "2-1",
+                            "probability": 0.5082670498591431
+                        },
+                        {
+                            "team1": "Aurora Gaming",
+                            "team2": "Iron Wing",
+                            "winner": "Aurora Gaming",
+                            "score": "2-1",
+                            "probability": 0.7834346630136702
+                        },
+                        {
+                            "team1": "Nigma Galaxy",
+                            "team2": "Team Spirit",
+                            "winner": "Team Spirit",
+                            "score": "1-2",
+                            "probability": 0.1932244124950561
+                        },
+                        {
+                            "team1": "Vici Gaming",
+                            "team2": "OG",
+                            "winner": "Vici Gaming",
+                            "score": "2-1",
+                            "probability": 0.6534264646461004
+                        },
+                        {
+                            "team1": "Team Liquid",
+                            "team2": "BoomBoys",
+                            "winner": "BoomBoys",
+                            "score": "1-2",
+                            "probability": 0.4565142697623445
+                        },
+                        {
+                            "team1": "Team Yandex",
+                            "team2": "Team Falcons",
+                            "winner": "Team Falcons",
+                            "score": "1-2",
+                            "probability": 0.360669533716683
+                        }
+                    ]
+                },
+                {
+                    "round": 6,
+                    "matches": [
+                        {
+                            "team1": "Aurora Gaming",
+                            "team2": "Nigma Galaxy",
+                            "winner": "Aurora Gaming",
+                            "score": "2-1",
+                            "probability": 0.7470199702199487
+                        },
+                        {
+                            "team1": "Vici Gaming",
+                            "team2": "LGD Gaming",
+                            "winner": "Vici Gaming",
+                            "score": "2-0",
+                            "probability": 0.945173239172002
+                        },
+                        {
+                            "team1": "Team Liquid",
+                            "team2": "GamerLegion",
+                            "winner": "Team Liquid",
+                            "score": "2-0",
+                            "probability": 0.9490927259669528
+                        },
+                        {
+                            "team1": "Team Yandex",
+                            "team2": "Iron Wing",
+                            "winner": "Team Yandex",
+                            "score": "2-1",
+                            "probability": 0.7278389208871743
+                        },
+                        {
+                            "team1": "Team Spirit",
+                            "team2": "OG",
+                            "winner": "Team Spirit",
+                            "score": "2-1",
+                            "probability": 0.8970531358411303
+                        }
+                    ]
+                }
+            ],
+            "qualified": [
+                {
+                    "team": "Aurora Gaming"
+                },
+                {
+                    "team": "TEAM VISION"
+                },
+                {
+                    "team": "Vici Gaming"
+                },
+                {
+                    "team": "Team Liquid"
+                },
+                {
+                    "team": "Team Yandex"
+                },
+                {
+                    "team": "BoomBoys"
+                },
+                {
+                    "team": "Team Spirit"
+                },
+                {
+                    "team": "Team Falcons"
+                }
+            ],
+            "eliminated": [
+                {
+                    "team": "HULIGANI"
+                },
+                {
+                    "team": "GamerLegion"
+                },
+                {
+                    "team": "LGD Gaming"
+                },
+                {
+                    "team": "Xtreme Gaming"
+                },
+                {
+                    "team": "Nigma Galaxy"
+                },
+                {
+                    "team": "Iron Wing"
+                },
+                {
+                    "team": "OG"
+                },
+                {
+                    "team": "Team Resilience"
+                }
+            ]
+        }
+    ]
+}

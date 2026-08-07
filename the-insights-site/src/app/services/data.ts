@@ -9,6 +9,8 @@ import { Stat } from '../models/stat';
 import { Prefix } from '../models/prefix';
 import { Suffix } from '../models/suffix';
 import { Team } from '../models/team';
+import { TeamRating } from '../models/team-rating';
+import { PredictedSwiss } from '../models/predicted-swiss';
 
 export interface RoleSlot {
     team: string;
@@ -36,6 +38,8 @@ export class DataService {
     suffixes = signal<Record<string, Suffix>>({});
     roles = signal<Record<string, Role>>({});
     team = signal<Team[]>([]);
+    teamsRating = signal<TeamRating[]>([]);
+    predictedSwiss = signal<PredictedSwiss | null>(null);
 
     roleName = ['Core', 'Mid', 'Support'];
 
@@ -73,6 +77,14 @@ export class DataService {
             .subscribe(data => this.roles.set(data));
 
         this.http.get<Team[]>('assets/data/teams.json').subscribe(data => this.team.set(data));
+
+        this.http
+            .get<TeamRating[]>('assets/data/teams_rating.json')
+            .subscribe(data => this.teamsRating.set(data));
+
+        this.http
+            .get<PredictedSwiss>('assets/data/predicted_swiss.json')
+            .subscribe(data => this.predictedSwiss.set(data));
     }
 
     createRoleSlotId(team: string, pos: string): string {

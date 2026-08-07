@@ -16,6 +16,8 @@ Every script in this folder is one step of a pipeline that turns publicly availa
 | 4 | `stats_averager.py` | Averages stats per team+role slot and detects best series for GROUP / PLAYOFF | `players_stats_avg.json` |
 | 5 | `hero.py` | Pulls the hero list from OpenDota and tags heroes with 8 flavor categories | `heroes.json` |
 | 6 | `teams_icon_scraper.py` | Grabs team icons from Liquipedia | `teams_icon.json` |
+| 7 | `teams_rating_scraper.py` | Scrapes each team's Glicko-2 rating and head-to-head records from datdota | `teams_rating.json` |
+| 8 | `predict_swiss.py` | Simulates the Swiss stage (group assignment, pairing rules, qualification) from ratings + H2H | `predicted_swiss.json` |
 
 <details>
 <summary><strong>Pipeline detail (click to expand)</strong></summary>
@@ -26,6 +28,8 @@ Every script in this folder is one step of a pipeline that turns publicly availa
 4. **Aggregation** — `stats_averager.py` averages each team+role slot and, for BEST mode, finds the best series by GROUP and PLAYOFF formulas.
 5. **Heroes** — `hero.py` caches the hero list from OpenDota and tags every hero with 8 categories (crimson, cerulean, emerald, royal, golden, elemental, otherworldly, heroic).
 6. **Team icons** — `teams_icon_scraper.py` collects the team icon URL for every participant.
+7. **Team ratings** — `teams_rating_scraper.py` pulls each team's Glicko-2 rating and head-to-head win/loss record against every other participant from datdota.
+8. **Swiss prediction** — `predict_swiss.py` runs an in-sample simulation of the Swiss stage using those ratings and H2H records, applying group assignment and per-round pairing rules to produce the group, round history, and qualified / eliminated teams.
 </details>
 
 ## Setup
@@ -54,6 +58,8 @@ python stats_parser.py      # 3. per-match stats -> players_stats.json (+ failed
 python stats_averager.py    # 4. team+role averages -> players_stats_avg.json
 python hero.py              # 5. heroes -> heroes.json
 python teams_icon_scraper.py # 6. team icons -> teams_icon.json
+python teams_rating_scraper.py # 7. team ratings + H2H -> teams_rating.json
+python predict_swiss.py       # 8. Swiss simulation -> predicted_swiss.json
 ```
 
 ## Outputs
@@ -62,4 +68,4 @@ All produced JSON files end up in the site's data folder: `the-insights-site/src
 
 ## Data sources
 
-Liquipedia, Dotabuff, OpenDota, and STRATZ.
+Liquipedia, Dotabuff, OpenDota, datdota, and STRATZ.

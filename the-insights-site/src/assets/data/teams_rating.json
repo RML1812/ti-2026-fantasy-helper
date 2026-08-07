@@ -1,0 +1,1058 @@
+[
+    {
+        "team": "Aurora Gaming",
+        "glicko_2": 1980.61,
+        "h2h": {
+            "BoomBoys": {
+                "win": 1,
+                "lose": 6
+            },
+            "Iron Wing": {
+                "win": 6,
+                "lose": 3
+            },
+            "Team Falcons": {
+                "win": 6,
+                "lose": 4
+            },
+            "Team Liquid": {
+                "win": 5,
+                "lose": 3
+            },
+            "Team Yandex": {
+                "win": 1,
+                "lose": 2
+            },
+            "Xtreme Gaming": {
+                "win": 3,
+                "lose": 1
+            },
+            "Team Spirit": {
+                "win": 4,
+                "lose": 4
+            },
+            "TEAM VISION": {
+                "win": 6,
+                "lose": 8
+            },
+            "Nigma Galaxy": {
+                "win": 1,
+                "lose": 1
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 2,
+                "lose": 1
+            },
+            "OG": {
+                "win": 1,
+                "lose": 0
+            },
+            "GamerLegion": {
+                "win": 2,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 1,
+                "lose": 3
+            }
+        }
+    },
+    {
+        "team": "BoomBoys",
+        "glicko_2": 2002.19,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 6,
+                "lose": 1
+            },
+            "Iron Wing": {
+                "win": 3,
+                "lose": 4
+            },
+            "Team Falcons": {
+                "win": 6,
+                "lose": 4
+            },
+            "Team Liquid": {
+                "win": 4,
+                "lose": 4
+            },
+            "Team Yandex": {
+                "win": 2,
+                "lose": 2
+            },
+            "Xtreme Gaming": {
+                "win": 5,
+                "lose": 0
+            },
+            "Team Spirit": {
+                "win": 3,
+                "lose": 2
+            },
+            "TEAM VISION": {
+                "win": 2,
+                "lose": 7
+            },
+            "Nigma Galaxy": {
+                "win": 4,
+                "lose": 0
+            },
+            "HULIGANI": {
+                "win": 3,
+                "lose": 1
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 4,
+                "lose": 1
+            },
+            "OG": {
+                "win": 3,
+                "lose": 1
+            },
+            "GamerLegion": {
+                "win": 6,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 5,
+                "lose": 3
+            }
+        }
+    },
+    {
+        "team": "Iron Wing",
+        "glicko_2": 1903.92,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 3,
+                "lose": 6
+            },
+            "BoomBoys": {
+                "win": 4,
+                "lose": 3
+            },
+            "Team Falcons": {
+                "win": 0,
+                "lose": 5
+            },
+            "Team Liquid": {
+                "win": 1,
+                "lose": 2
+            },
+            "Team Yandex": {
+                "win": 5,
+                "lose": 4
+            },
+            "Xtreme Gaming": {
+                "win": 4,
+                "lose": 3
+            },
+            "Team Spirit": {
+                "win": 0,
+                "lose": 1
+            },
+            "TEAM VISION": {
+                "win": 1,
+                "lose": 3
+            },
+            "Nigma Galaxy": {
+                "win": 4,
+                "lose": 1
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 4,
+                "lose": 3
+            },
+            "OG": {
+                "win": 2,
+                "lose": 3
+            },
+            "GamerLegion": {
+                "win": 0,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 4,
+                "lose": 1
+            }
+        }
+    },
+    {
+        "team": "Team Falcons",
+        "glicko_2": 2016.35,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 4,
+                "lose": 6
+            },
+            "BoomBoys": {
+                "win": 4,
+                "lose": 6
+            },
+            "Iron Wing": {
+                "win": 5,
+                "lose": 0
+            },
+            "Team Liquid": {
+                "win": 8,
+                "lose": 7
+            },
+            "Team Yandex": {
+                "win": 3,
+                "lose": 0
+            },
+            "Xtreme Gaming": {
+                "win": 3,
+                "lose": 0
+            },
+            "Team Spirit": {
+                "win": 7,
+                "lose": 2
+            },
+            "TEAM VISION": {
+                "win": 3,
+                "lose": 5
+            },
+            "Nigma Galaxy": {
+                "win": 2,
+                "lose": 0
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 4,
+                "lose": 2
+            },
+            "OG": {
+                "win": 1,
+                "lose": 2
+            },
+            "GamerLegion": {
+                "win": 6,
+                "lose": 1
+            },
+            "LGD Gaming": {
+                "win": 1,
+                "lose": 0
+            }
+        }
+    },
+    {
+        "team": "Team Liquid",
+        "glicko_2": 1982.0,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 3,
+                "lose": 5
+            },
+            "BoomBoys": {
+                "win": 4,
+                "lose": 4
+            },
+            "Iron Wing": {
+                "win": 2,
+                "lose": 1
+            },
+            "Team Falcons": {
+                "win": 7,
+                "lose": 8
+            },
+            "Team Yandex": {
+                "win": 0,
+                "lose": 1
+            },
+            "Xtreme Gaming": {
+                "win": 4,
+                "lose": 3
+            },
+            "Team Spirit": {
+                "win": 2,
+                "lose": 5
+            },
+            "TEAM VISION": {
+                "win": 1,
+                "lose": 3
+            },
+            "Nigma Galaxy": {
+                "win": 1,
+                "lose": 4
+            },
+            "HULIGANI": {
+                "win": 1,
+                "lose": 2
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 6,
+                "lose": 3
+            },
+            "OG": {
+                "win": 1,
+                "lose": 0
+            },
+            "GamerLegion": {
+                "win": 6,
+                "lose": 1
+            },
+            "LGD Gaming": {
+                "win": 1,
+                "lose": 2
+            }
+        }
+    },
+    {
+        "team": "Team Yandex",
+        "glicko_2": 2040.25,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 2,
+                "lose": 1
+            },
+            "BoomBoys": {
+                "win": 2,
+                "lose": 2
+            },
+            "Iron Wing": {
+                "win": 4,
+                "lose": 5
+            },
+            "Team Falcons": {
+                "win": 0,
+                "lose": 3
+            },
+            "Team Liquid": {
+                "win": 1,
+                "lose": 0
+            },
+            "Xtreme Gaming": {
+                "win": 3,
+                "lose": 1
+            },
+            "Team Spirit": {
+                "win": 7,
+                "lose": 1
+            },
+            "TEAM VISION": {
+                "win": 2,
+                "lose": 2
+            },
+            "Nigma Galaxy": {
+                "win": 0,
+                "lose": 0
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 2,
+                "lose": 0
+            },
+            "OG": {
+                "win": 2,
+                "lose": 1
+            },
+            "GamerLegion": {
+                "win": 0,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 7,
+                "lose": 3
+            }
+        }
+    },
+    {
+        "team": "Xtreme Gaming",
+        "glicko_2": 1517.78,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 1,
+                "lose": 3
+            },
+            "BoomBoys": {
+                "win": 0,
+                "lose": 5
+            },
+            "Iron Wing": {
+                "win": 3,
+                "lose": 4
+            },
+            "Team Falcons": {
+                "win": 0,
+                "lose": 3
+            },
+            "Team Liquid": {
+                "win": 3,
+                "lose": 4
+            },
+            "Team Yandex": {
+                "win": 1,
+                "lose": 3
+            },
+            "Team Spirit": {
+                "win": 3,
+                "lose": 3
+            },
+            "TEAM VISION": {
+                "win": 3,
+                "lose": 4
+            },
+            "Nigma Galaxy": {
+                "win": 0,
+                "lose": 2
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 1,
+                "lose": 4
+            },
+            "Vici Gaming": {
+                "win": 3,
+                "lose": 2
+            },
+            "OG": {
+                "win": 3,
+                "lose": 0
+            },
+            "GamerLegion": {
+                "win": 2,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 2,
+                "lose": 2
+            }
+        }
+    },
+    {
+        "team": "Team Spirit",
+        "glicko_2": 1969.96,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 4,
+                "lose": 4
+            },
+            "BoomBoys": {
+                "win": 2,
+                "lose": 3
+            },
+            "Iron Wing": {
+                "win": 1,
+                "lose": 0
+            },
+            "Team Falcons": {
+                "win": 2,
+                "lose": 7
+            },
+            "Team Liquid": {
+                "win": 5,
+                "lose": 2
+            },
+            "Team Yandex": {
+                "win": 1,
+                "lose": 7
+            },
+            "Xtreme Gaming": {
+                "win": 3,
+                "lose": 3
+            },
+            "TEAM VISION": {
+                "win": 3,
+                "lose": 3
+            },
+            "Nigma Galaxy": {
+                "win": 5,
+                "lose": 3
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 6,
+                "lose": 1
+            },
+            "OG": {
+                "win": 3,
+                "lose": 0
+            },
+            "GamerLegion": {
+                "win": 3,
+                "lose": 4
+            },
+            "LGD Gaming": {
+                "win": 0,
+                "lose": 1
+            }
+        }
+    },
+    {
+        "team": "TEAM VISION",
+        "glicko_2": 2053.95,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 8,
+                "lose": 6
+            },
+            "BoomBoys": {
+                "win": 7,
+                "lose": 2
+            },
+            "Iron Wing": {
+                "win": 3,
+                "lose": 1
+            },
+            "Team Falcons": {
+                "win": 5,
+                "lose": 3
+            },
+            "Team Liquid": {
+                "win": 3,
+                "lose": 1
+            },
+            "Team Yandex": {
+                "win": 2,
+                "lose": 2
+            },
+            "Xtreme Gaming": {
+                "win": 4,
+                "lose": 3
+            },
+            "Team Spirit": {
+                "win": 3,
+                "lose": 3
+            },
+            "Nigma Galaxy": {
+                "win": 7,
+                "lose": 0
+            },
+            "HULIGANI": {
+                "win": 2,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 2,
+                "lose": 0
+            },
+            "OG": {
+                "win": 1,
+                "lose": 0
+            },
+            "GamerLegion": {
+                "win": 3,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 0,
+                "lose": 1
+            }
+        }
+    },
+    {
+        "team": "Nigma Galaxy",
+        "glicko_2": 1856.49,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 1,
+                "lose": 1
+            },
+            "BoomBoys": {
+                "win": 0,
+                "lose": 4
+            },
+            "Iron Wing": {
+                "win": 1,
+                "lose": 4
+            },
+            "Team Falcons": {
+                "win": 0,
+                "lose": 2
+            },
+            "Team Liquid": {
+                "win": 4,
+                "lose": 1
+            },
+            "Team Yandex": {
+                "win": 0,
+                "lose": 0
+            },
+            "Xtreme Gaming": {
+                "win": 2,
+                "lose": 0
+            },
+            "Team Spirit": {
+                "win": 3,
+                "lose": 5
+            },
+            "TEAM VISION": {
+                "win": 0,
+                "lose": 7
+            },
+            "HULIGANI": {
+                "win": 6,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 0,
+                "lose": 2
+            },
+            "OG": {
+                "win": 1,
+                "lose": 1
+            },
+            "GamerLegion": {
+                "win": 2,
+                "lose": 1
+            },
+            "LGD Gaming": {
+                "win": 0,
+                "lose": 0
+            }
+        }
+    },
+    {
+        "team": "HULIGANI",
+        "glicko_2": 1450.21,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 0,
+                "lose": 0
+            },
+            "BoomBoys": {
+                "win": 1,
+                "lose": 3
+            },
+            "Iron Wing": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Falcons": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Liquid": {
+                "win": 2,
+                "lose": 1
+            },
+            "Team Yandex": {
+                "win": 0,
+                "lose": 0
+            },
+            "Xtreme Gaming": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Spirit": {
+                "win": 0,
+                "lose": 0
+            },
+            "TEAM VISION": {
+                "win": 0,
+                "lose": 2
+            },
+            "Nigma Galaxy": {
+                "win": 0,
+                "lose": 6
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 0,
+                "lose": 0
+            },
+            "OG": {
+                "win": 0,
+                "lose": 0
+            },
+            "GamerLegion": {
+                "win": 1,
+                "lose": 2
+            },
+            "LGD Gaming": {
+                "win": 1,
+                "lose": 2
+            }
+        }
+    },
+    {
+        "team": "Team Resilience",
+        "glicko_2": 1498.44,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 0,
+                "lose": 0
+            },
+            "BoomBoys": {
+                "win": 0,
+                "lose": 0
+            },
+            "Iron Wing": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Falcons": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Liquid": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Yandex": {
+                "win": 0,
+                "lose": 0
+            },
+            "Xtreme Gaming": {
+                "win": 4,
+                "lose": 1
+            },
+            "Team Spirit": {
+                "win": 0,
+                "lose": 0
+            },
+            "TEAM VISION": {
+                "win": 0,
+                "lose": 0
+            },
+            "Nigma Galaxy": {
+                "win": 0,
+                "lose": 0
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 3,
+                "lose": 5
+            },
+            "OG": {
+                "win": 0,
+                "lose": 0
+            },
+            "GamerLegion": {
+                "win": 0,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 0,
+                "lose": 0
+            }
+        }
+    },
+    {
+        "team": "Vici Gaming",
+        "glicko_2": 1833.97,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 1,
+                "lose": 2
+            },
+            "BoomBoys": {
+                "win": 1,
+                "lose": 4
+            },
+            "Iron Wing": {
+                "win": 3,
+                "lose": 4
+            },
+            "Team Falcons": {
+                "win": 2,
+                "lose": 4
+            },
+            "Team Liquid": {
+                "win": 3,
+                "lose": 6
+            },
+            "Team Yandex": {
+                "win": 0,
+                "lose": 2
+            },
+            "Xtreme Gaming": {
+                "win": 2,
+                "lose": 3
+            },
+            "Team Spirit": {
+                "win": 1,
+                "lose": 6
+            },
+            "TEAM VISION": {
+                "win": 0,
+                "lose": 2
+            },
+            "Nigma Galaxy": {
+                "win": 2,
+                "lose": 0
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 5,
+                "lose": 3
+            },
+            "OG": {
+                "win": 2,
+                "lose": 0
+            },
+            "GamerLegion": {
+                "win": 2,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 0,
+                "lose": 0
+            }
+        }
+    },
+    {
+        "team": "OG",
+        "glicko_2": 1817.94,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 0,
+                "lose": 1
+            },
+            "BoomBoys": {
+                "win": 1,
+                "lose": 3
+            },
+            "Iron Wing": {
+                "win": 3,
+                "lose": 2
+            },
+            "Team Falcons": {
+                "win": 2,
+                "lose": 1
+            },
+            "Team Liquid": {
+                "win": 0,
+                "lose": 1
+            },
+            "Team Yandex": {
+                "win": 1,
+                "lose": 2
+            },
+            "Xtreme Gaming": {
+                "win": 0,
+                "lose": 3
+            },
+            "Team Spirit": {
+                "win": 0,
+                "lose": 3
+            },
+            "TEAM VISION": {
+                "win": 0,
+                "lose": 1
+            },
+            "Nigma Galaxy": {
+                "win": 1,
+                "lose": 1
+            },
+            "HULIGANI": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 0,
+                "lose": 2
+            },
+            "GamerLegion": {
+                "win": 2,
+                "lose": 0
+            },
+            "LGD Gaming": {
+                "win": 1,
+                "lose": 2
+            }
+        }
+    },
+    {
+        "team": "GamerLegion",
+        "glicko_2": 1791.38,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 0,
+                "lose": 2
+            },
+            "BoomBoys": {
+                "win": 0,
+                "lose": 6
+            },
+            "Iron Wing": {
+                "win": 0,
+                "lose": 0
+            },
+            "Team Falcons": {
+                "win": 1,
+                "lose": 6
+            },
+            "Team Liquid": {
+                "win": 1,
+                "lose": 6
+            },
+            "Team Yandex": {
+                "win": 0,
+                "lose": 0
+            },
+            "Xtreme Gaming": {
+                "win": 0,
+                "lose": 2
+            },
+            "Team Spirit": {
+                "win": 4,
+                "lose": 3
+            },
+            "TEAM VISION": {
+                "win": 0,
+                "lose": 3
+            },
+            "Nigma Galaxy": {
+                "win": 1,
+                "lose": 2
+            },
+            "HULIGANI": {
+                "win": 2,
+                "lose": 1
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 0,
+                "lose": 2
+            },
+            "OG": {
+                "win": 0,
+                "lose": 2
+            },
+            "LGD Gaming": {
+                "win": 0,
+                "lose": 0
+            }
+        }
+    },
+    {
+        "team": "LGD Gaming",
+        "glicko_2": 1521.61,
+        "h2h": {
+            "Aurora Gaming": {
+                "win": 3,
+                "lose": 1
+            },
+            "BoomBoys": {
+                "win": 3,
+                "lose": 5
+            },
+            "Iron Wing": {
+                "win": 1,
+                "lose": 4
+            },
+            "Team Falcons": {
+                "win": 0,
+                "lose": 1
+            },
+            "Team Liquid": {
+                "win": 2,
+                "lose": 1
+            },
+            "Team Yandex": {
+                "win": 3,
+                "lose": 7
+            },
+            "Xtreme Gaming": {
+                "win": 2,
+                "lose": 2
+            },
+            "Team Spirit": {
+                "win": 1,
+                "lose": 0
+            },
+            "TEAM VISION": {
+                "win": 1,
+                "lose": 0
+            },
+            "Nigma Galaxy": {
+                "win": 0,
+                "lose": 0
+            },
+            "HULIGANI": {
+                "win": 2,
+                "lose": 1
+            },
+            "Team Resilience": {
+                "win": 0,
+                "lose": 0
+            },
+            "Vici Gaming": {
+                "win": 0,
+                "lose": 0
+            },
+            "OG": {
+                "win": 2,
+                "lose": 1
+            },
+            "GamerLegion": {
+                "win": 0,
+                "lose": 0
+            }
+        }
+    }
+]

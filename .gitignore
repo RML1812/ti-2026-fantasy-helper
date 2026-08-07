@@ -18,6 +18,7 @@ data-gathering/players_stats_avg.json
 data-gathering/heroes.json
 data-gathering/teams.json
 data-gathering/teams_rating.json
+data-gathering/predicted_swiss.json
 data-gathering/failed_matches.json
 
 # Dotabuff session cookies — never commit

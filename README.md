@@ -36,7 +36,12 @@ Rank every team+role slot in the pool by fantasy points.
 - In **BEST** mode, jump straight to the exact series behind each score
 
 ### TI Prophecy
-Predict what each team's placement will be. *(Coming soon.)*
+Predict each team's placement with a Swiss-stage simulation driven by every team's Glicko-2 rating and head-to-head history.
+- **Swiss Stage** — full simulation, visualized three ways:
+  - Final **ranking table** with series/game records, per-round results, and qualified / eliminated badges
+  - **Swiss flow** — every round's pairings, scores, and win probabilities, grouped by record
+  - **References** — Glicko-2 team ranking and a head-to-head matrix
+- **Playoff** — elimination bracket projections. *(Coming soon.)*
 
 ---
 
@@ -84,7 +89,7 @@ Dota 2 Fantasy 2026/
 
 ## Data sources & credits
 
-Player and match statistics are collected from public Dota 2 sources covering the pro scene on **patch 7.41** — Liquipedia, Dotabuff, and the OpenDota / STRATZ APIs.
+Player and match statistics are collected from public Dota 2 sources covering the pro scene on **patch 7.41** — Liquipedia, Dotabuff, and the OpenDota / STRATZ / datdota APIs.
 
 The biggest thanks to [**bydoodle/dota2fantasy**](https://github.com/bydoodle/dota2fantasy) — this project gained tons of knowledge and reference from it.
 

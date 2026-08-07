@@ -1,1 +1,239 @@
-<p>This is a coming soon feature</p>
+<h1>TI Prophecy</h1>
+
+<div class="prophecy-tabs">
+    <button (click)="activeTab.set('SWISS')" [class.active]="activeTab() === 'SWISS'">
+        Swiss Stage
+    </button>
+    <button (click)="activeTab.set('PLAYOFF')" [class.active]="activeTab() === 'PLAYOFF'">
+        Playoff
+    </button>
+</div>
+
+@if (activeTab() === 'PLAYOFF') {
+    <div class="coming-soon">
+        <div class="coming-soon-icon">🔮</div>
+        <h1>Coming Soon</h1>
+        <div class="coming-soon-decoration"></div>
+        <p>
+            Playoff prediction is still in development. Check back later for the playoff
+            elimination bracket projections.
+        </p>
+    </div>
+} @else {
+    <section class="prophecy-intro">
+        <p>
+            The prediction results from the creator take on how the organizer will decide on group
+            assignment and pairing on the first round to make the Chinese team have more probability
+            to qualify, since TI 2026 is conducted at China.
+        </p>
+        <p>
+            The data used to predict and determine outcome comes from every team's Glicko-2 rating
+            and H2H between team.
+        </p>
+        <p>
+            From the experiment, there are multiple outcome on the group assignment and pairing, but
+            at the end, the resulted qualified and eliminated team is almost the same.
+        </p>
+        <p>This page will visualize how the swiss stage goes.</p>
+    </section>
+
+    <section>
+        <h2>Ranking Table — End Result</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Team</th>
+                        <th>Matches</th>
+                        <th>Games</th>
+                        @for (round of rounds(); track round.round) {
+                            <th>Round {{ round.round }}</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (row of standingsRows(); track row.team) {
+                        <tr>
+                            <td class="rank-cell">{{ $index + 1 }}</td>
+                            <td class="team-cell">
+                                @if (data.getTeamIcon(row.team)) {
+                                    <img
+                                        [src]="data.getTeamIcon(row.team)"
+                                        [alt]="row.team"
+                                        class="team-icon"
+                                        loading="lazy" />
+                                }
+                                <span class="team-name">{{ row.team }}</span>
+                                @if (row.status === 'qualified') {
+                                    <span class="badge green">Qualified</span>
+                                } @else {
+                                    <span class="badge red">Eliminated</span>
+                                }
+                            </td>
+                            <td>
+                                {{ row.wins }} - {{ row.losses }}
+                            </td>
+                            <td>
+                                {{ row.gamesWin }} - {{ row.gamesLoss }}
+                            </td>
+                            @for (result of row.roundResults; track $index) {
+                                <td class="round-result-cell">
+                                    @if (result) {
+                                        <span
+                                            class="round-result"
+                                            [class.win]="result.win"
+                                            [class.loss]="!result.win">
+                                            {{ result.text }}
+                                        </span>
+                                    } @else {
+                                        <span class="round-result-idle">&mdash;</span>
+                                    }
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>Swiss Stage Flow</h2>
+        @for (round of roundsBuckets(); track round.round) {
+            <div class="round-block">
+                <h3>Round {{ round.round }}</h3>
+                @for (bucket of round.buckets; track bucket.record) {
+                    <div class="bucket-block">
+                        <div class="bucket-header">{{ bucket.record }}</div>
+                        <div class="match-list">
+                            @for (match of bucket.matches; track $index) {
+                                <div class="match-row">
+                                    <span class="match-team">
+                                        <span class="group-badge" [class.group-a]="groupOf(match.team1) === 'A'"
+                                            [class.group-b]="groupOf(match.team1) === 'B'">
+                                            {{ groupOf(match.team1) }}
+                                        </span>
+                                        @if (data.getTeamIcon(match.team1)) {
+                                            <img
+                                                [src]="data.getTeamIcon(match.team1)"
+                                                [alt]="match.team1"
+                                                class="team-icon"
+                                                loading="lazy" />
+                                        }
+                                        <span class="team-name">
+                                            {{ match.team1 }}
+                                        </span>
+                                        <span class="prob" [class.win]="match.winner === match.team1">
+                                            {{ pctOf(match.prob1) }}
+                                        </span>
+                                    </span>
+                                    <span class="match-score">
+                                        {{ match.score }}
+                                    </span>
+                                    <span class="match-team">
+                                        <span class="prob" [class.win]="match.winner === match.team2">
+                                            {{ pctOf(match.prob2) }}
+                                        </span>
+                                        <span class="team-name">
+                                            {{ match.team2 }}
+                                        </span>
+                                        @if (data.getTeamIcon(match.team2)) {
+                                            <img
+                                                [src]="data.getTeamIcon(match.team2)"
+                                                [alt]="match.team2"
+                                                class="team-icon"
+                                                loading="lazy" />
+                                        }
+                                        <span class="group-badge" [class.group-a]="groupOf(match.team2) === 'A'"
+                                            [class.group-b]="groupOf(match.team2) === 'B'">
+                                            {{ groupOf(match.team2) }}
+                                        </span>
+                                    </span>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+
+    <section>
+        <h2>References</h2>
+
+        <h3>Glicko-2 Rating — Team Ranking</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Team</th>
+                        <th>Glicko-2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (entry of glickoRanking(); track entry.team) {
+                        <tr>
+                            <td class="rank-cell">{{ $index + 1 }}</td>
+                            <td class="team-cell">
+                                @if (data.getTeamIcon(entry.team)) {
+                                    <img
+                                        [src]="data.getTeamIcon(entry.team)"
+                                        [alt]="entry.team"
+                                        class="team-icon"
+                                        loading="lazy" />
+                                }
+                                {{ entry.team }}
+                            </td>
+                            <td>{{ entry.glicko_2 | formatDecimal }}</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <h3>H2H Teams Matrix</h3>
+        <div class="table-container matrix-container">
+            <table class="h2h-matrix">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        @for (colTeam of glickoRanking(); track colTeam.team) {
+                            <th>{{ colTeam.team }}</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (row of h2hMatrix(); track row.team) {
+                        <tr>
+                            <th class="row-team">
+                                @if (data.getTeamIcon(row.team)) {
+                                    <img
+                                        [src]="data.getTeamIcon(row.team)"
+                                        [alt]="row.team"
+                                        class="team-icon"
+                                        loading="lazy" />
+                                }
+                                {{ row.team }}
+                            </th>
+                            @for (cell of row.cells; track $index) {
+                                <td>
+                                    @if (cell) {
+                                        <span
+                                            [class.win-more]="cell.win > cell.lose"
+                                            [class.win-less]="cell.win < cell.lose">
+                                            {{ cell.win }} - {{ cell.lose }}
+                                        </span>
+                                    } @else {
+                                        <span class="diagonal">&mdash;</span>
+                                    }
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </section>
+}
